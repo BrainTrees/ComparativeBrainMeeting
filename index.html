@@ -379,10 +379,12 @@
         }
         .programDayHeader p {
             font-weight: 900!important;
+            font-size: x-large;
         }
         #programDay1 {
             display: flex;
-            width: 33%;
+            /* width: 33%; */
+            width: 100%;
             flex-direction: column;
             justify-content: flex-start;
             position: relative;
@@ -391,7 +393,7 @@
             padding-right: 1%;
             padding-bottom: 1%;
             /* padding-bottom: 1%; */
-            margin-right: 1%;
+            /* margin-right: 1%; */
             /* background: rgba(255,255,255,0.05); */
             background: rgba(15,15,15,0.8);
             /* border: thin solid white; */
@@ -399,7 +401,8 @@
         }
         #programDay2 {
             display: flex;
-            width: 33%;
+            /* width: 33%; */
+            width: 100%;
             flex-direction: column;
             justify-content: flex-start;
             position: relative;
@@ -408,7 +411,7 @@
             padding-left: 1%;
             padding-bottom: 1%;
             /* padding-bottom: 1%; */
-            margin-right: 1%;
+            /* margin-right: 1%; */
             /* background: rgba(255,255,255,0.05); */
             background: rgba(15,15,15,0.8);
             /* background: rgba(0,0,0,0.35); */
@@ -416,7 +419,8 @@
         }
         #programDay3 {
             display: flex;
-            width: 33%;
+            /* width: 33%; */
+            width: 100%;
             flex-direction: column;
             justify-content: flex-start;
             position: relative;
@@ -425,7 +429,7 @@
             padding-left: 1%;
             padding-bottom: 1%;
             /* padding-bottom: 1%; */
-            margin-left: 1%;
+            /* margin-left: 1%; */
             /* background: rgba(255,255,255,0.05); */
             background: rgba(15,15,15,0.8);
             /* background: rgba(0,0,0,0.35); */
@@ -516,9 +520,17 @@
                 font-weight: bold !important;
             }
         }
-        .programTableItems {
+        .programTableItems1 {
             border: 0;
-            flex: 1 1 100%;
+            flex: 1 1 20%;
+            /* width: 20%; */
+            position: relative;
+            margin: 0.5rem;
+        }
+        .programTableItems2 {
+            border: 0;
+            flex: 1 1 80%;
+            /* width: 80%; */
             position: relative;
             margin: 0.5rem;
         }
@@ -822,24 +834,30 @@
                                         <p><b>Morning Session 1</b>  <i>Start at 9 AM</i></p>
                                     </div>
                                     <div class="programTableContentUnevenContrib">
-                                        <div class="programTableItems"><p><b>Kamilla Souza. </b><i> Working with Cetacean Brains in Brazil: The Brazilian Neurobiodiversity Network</i></p></div>
+                                        <div class="programTableItems1"><p><b>Kamilla Souza </b></p></div>
+                                        <div class="programTableItems2"><p><i> Working with Cetacean Brains in Brazil: The Brazilian Neurobiodiversity Network</i></p></div>
                                     </div>
                                     <div class="programTableContentEvenContrib">
-                                        <div class="programTableItems"><p><b>Bill Hopkins. </b><i> Interrogating the Chimpanzee Inferior Frontal Gyrus Using Multiple Methodologies and ApproachesCognitive</i></p></div>
+                                        <div class="programTableItems1"><p><b>Bill Hopkins </b></p></div>
+                                        <div class="programTableItems2"><p><i> Interrogating the Chimpanzee Inferior Frontal Gyrus Using Multiple Methodologies and ApproachesCognitive</i></p></div>
                                         <!-- Correlates of White Matter Connectivity in Chimpanzees -->
                                     </div>
                                     <div class="programTableContentUnevenContrib">
-                                        <div class="programTableItems"><p><b>Jean-François Mangin. </b><i> Title to be announced</i></p></div>
+                                        <div class="programTableItems1"><p><b>Jean-François Mangin </b></p></div>
+                                        <div class="programTableItems2"><p><i> Title to be announced</i></p></div>
                                     </div>
                                     <div class="programTableContentEvenContrib">
-                                        <div class="programTableItems"><p><b>Katherine Bryant. </b><i> Title to be announced</i></p></div>
+                                        <div class="programTableItems1"><p><b>Katherine Bryant </b></p></div>
+                                        <div class="programTableItems2"><p><i>Comparative connectivity fingerprint analysis reveals hotspots of human brain evolution.</i></p></div>
                                     </div>
 
                                     <div class="programTableContentUneven">
-                                        <div class="programTableItems"><p>Coffee break <i>11.05–11.15</i></p></div>
+                                        <div class="programTableItems1"><p>Coffee break </p></div>
+                                        <div class="programTableItems2"><p><i>11.05–11.15</i></p></div>
                                     </div>
-                                    <div class="programTableContentEven">
-                                        <div class="programTableItems"><p>Poster pitches <i>11.15–11.20</i></p></div>
+                                    <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>Poster pitches</b></p></div>
+                                        <div class="programTableItems2"><p><i>11.15–11.20</i></p></div>
                                     </div>
 
                                     <!-- Morning session 2 Day 1 -->
@@ -847,24 +865,30 @@
                                         <p><b>Morning Session 2</b> <i>Start at 11:20 AM</i></p>
                                     </div>
                                     <div class="programTableContentUnevenContrib">
-                                        <div class="programTableItems"><p><b>Amy Howard (online). </b> <i>The BigMac Dataset: linking microscopy-derived microstructure with MR signals throughout the macaque brain</i></p></div>
+                                        <div class="programTableItems1"><p><b>Amy Howard (online) </b></p></div>
+                                        <div class="programTableItems2"><p><i>The BigMac Dataset: linking microscopy-derived microstructure with MR signals throughout the macaque brain</i></p></div>
                                     </div>
                                     <div class="programTableContentEvenContrib">
-                                        <div class="programTableItems"><p><b>David Meunier. </b> <i>Macapype, a pipeline framework for NHP anatomical MRI segmentation: latest developments</i></p></div>
+                                        <div class="programTableItems1"><p><b>David Meunier </b></p></div>
+                                        <div class="programTableItems2"><p><i>Macapype, a pipeline framework for NHP anatomical MRI segmentation: latest developments</i></p></div>
                                     </div>
                                     <div class="programTableContentUnevenContrib">
-                                        <div class="programTableItems"><p><b>Magdalaena Boch. </b> <i>Converging minds? Investigating social cognition in domestic dogs and humans</i></p></div>
+                                        <div class="programTableItems1"><p><b>Magdalaena Boch </b></p></div>
+                                        <div class="programTableItems2"><p><i>Converging minds? Investigating social cognition in domestic dogs and humans</i></p></div>
                                     </div>
                                     <div class="programTableContentEvenContrib">
-                                        <div class="programTableItems"><p><b>Austin Benn. </b> <i>Talk title to be announced<br /><br /></i></p></div>
+                                        <div class="programTableItems1"><p><b>Austin Benn </b></p></div>
+                                        <div class="programTableItems2"><p><i>Talk title to be announced</i></p></div>
                                     </div>
 
                                     <div class="programTableContentUneven">
-                                        <div class="programTableItems"><p><b>Lunch break </b> <i>1.20–2.20 PM</i></p></div>
+                                        <div class="programTableItems1"><p>Lunch break</p></div>
+                                        <div class="programTableItems2"><p><i>1.20–2.20 PM</i></p></div>
                                     </div>
 
-                                    <div class="programTableContentEven">
-                                        <div class="programTableItems"><p><b>Posters </b> <i>2.30–3 PM</i></p></div>
+                                    <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>Posters </b></p></div>
+                                        <div class="programTableItems2"><p><i>2.30–3 PM</i></p></div>
                                     </div>
 
                                     <!-- Afternoon session 1 Day 1 -->
@@ -872,20 +896,25 @@
                                         <p><b>Afternoon session 1 </b><i>Start at 3 PM</i></p>
                                     </div>
                                     <div class="programTableContentUnevenContrib">
-                                        <div class="programTableItems"><p><b>Yaniv Assaf. </b><i> Talk title to be announced</i></p></div>
+                                        <div class="programTableItems1"><p><b>Yaniv Assaf </b></p></div>
+                                        <div class="programTableItems2"><p><i> Talk title to be announced</i></p></div>
                                     </div>
                                     <div class="programTableContentEvenContrib">
-                                        <div class="programTableItems"><p><b>Tianzi Jiang. </b><i> Macaque Brainnetome Atlas: A Multifaceted Brain Map with 2 Parcellation, Connection, and Histology</i></p></div>
+                                        <div class="programTableItems1"><p><b>Tianzi Jiang </b></p></div>
+                                        <div class="programTableItems2"><p><i> Macaque Brainnetome Atlas: A Multifaceted Brain Map with 2 Parcellation, Connection, and Histology</i></p></div>
                                     </div>
                                     <div class="programTableContentUnevenContrib">
-                                        <div class="programTableItems"><p><b>Ashley Parks. </b><i> Title to be announced</i></p></div>
+                                        <div class="programTableItems1"><p><b>Ashley Parks </b></p></div>
+                                        <div class="programTableItems2"><p><i> Title to be announced</i></p></div>
                                     </div>
                                     <div class="programTableContentEvenContrib">
-                                        <div class="programTableItems"><p><b>Neville Magielse. </b><i> Primate expansion of cerebellar crura I-II: primate-general or human-unique scaling?</i></p></div>
+                                        <div class="programTableItems1"><p><b>Neville Magielse </b></p></div>
+                                        <div class="programTableItems2"><p><i> Primate expansion of cerebellar crura I-II: primate-general or human-unique scaling?</i></p></div>
                                     </div>
 
                                     <div class="programTableContentUneven">
-                                        <div class="programTableItems"><p><b>Coffee break</b> <i>5–5.15 PM</i></p></div>
+                                        <div class="programTableItems1"><p>Coffee break</p></div>
+                                        <div class="programTableItems2"><p><i>5–5.15 PM</i></p></div>
                                     </div>
 
                                     <!-- Afternoon session 2 Day 1 -->
@@ -893,22 +922,41 @@
                                         <p><b>Afternoon session 2 </b><i>Start at 5.15 PM</i></p>
                                     </div>
                                     <div class="programTableContentUnevenContrib">
-                                        <div class="programTableItems"><p><b>Michel Thibaut de Schotten. </b><i> Squirrel monkey neuroscience<br /><br /></i></p></div>
+                                        <div class="programTableItems1"><p><b>Michel Thibaut de Schotten </b></p></div>
+                                        <div class="programTableItems2"><p><i> Squirrel monkey neuroscience</i></p></div>
                                     </div>
                                     <div class="programTableContentEvenContrib">
-                                        <div class="programTableItems"><p><b>Nicole Eichert. </b><i> Hippocampal connectivity patterns echo macroscale cortical evolution in the primate brain</i></p></div>
+                                        <div class="programTableItems1"><p><b>Nicole Eichert </b></p></div>
+                                        <div class="programTableItems2"><p><i> Hippocampal connectivity patterns echo macroscale cortical evolution in the primate brain</i></p></div>
                                     </div>
                                     <div class="programTableContentUnevenContrib">
-                                        <div class="programTableItems"><p><b>Cathy Crockford. </b><i> Title to be announced</i></p></div>
+                                        <div class="programTableItems1"><p><b>Cathy Crockford & Alfred Anwander </b></p></div>
+                                        <!-- Evolutionary Precursors of the Human Language Network in the Chimpanzee Brain -->
+                                        <div class="programTableItems2"><p><i> Title to be announced</i></p></div>
                                     </div>
                                     <div class="programTableContentEvenContrib">
-                                        <div class="programTableItems"><p><b>End of sessions </b><i> 6.45 PM</i></p></div>
+                                        <div class="programTableItems1"><p><b>End of sessions </b></p></div>
+                                        <div class="programTableItems2"><p><i> 6.45 PM</i></p></div>
                                     </div>
+                                    <!-- Dinner & Social Day 1 -->
+                                    <div class="programSessions">
+                                        <p><b>Dinner & Social </b><i>Start at 7.30 PM</i><br />
+                                            We would like to meet you all at <a style="color:black;" href="https://www.lafelicita.fr" target="_blank">La Felicità</a> to continue our discussions over dinner and drinks in a beautiful ambiente with Italian food. You can check out <a style="color:black;" href="https://www.tripadvisor.com/Restaurant_Review-g187147-d14156541-Reviews-La_Felicita-Paris_Ile_de_France.html#photos;aggregationId=&albumid=101&filter=7&ff=322557892" target="_blank">photos of the place</a>. There is a direct metro line 6 connection from <a href="https://www.google.com/maps/dir/Pasteur+Institute,+25-28+Rue+du+Dr+Roux,+75015+Paris/La+Felicit%C3%A0,+Parvis+Alan+Turing,+Paris/@48.8500296,2.3281321,14z/am=t/data=!3m2!4b1!5s0x47e66e038d21afeb:0xbe766aded6ca7d70!4m14!4m13!1m5!1m1!1s0x47e670376abf4b5b:0xe831277d10f68655!2m2!1d2.3108871!2d48.8407106!1m5!1m1!1s0x47e673c1a7b05e93:0x43df410cb9fd7b90!2m2!1d2.3727973!2d48.8323168!3e3?entry=ttu" target="_blank" style="color:black;">station Pasteur to station Chevaleret.</a>
+                                        </p>
+                                    </div>
+                                    <!-- <div class="programTableContentUneven" style="background-color: rgba(255,255,255,0.8);color: #000000;">
+                                        <div class="programTableItems1"><p><b>Dinner & Social</b></p></div>
+                                        <div class="programTableItems2"><p><i>Start at 7.30 PM</i></p></div>
+                                    </div> -->
 
                                 </div> <!--programDay1-->
+                            </div>
+
+                            <div><p style="line-height: 6rem;"><br /></p></div>
 
 
 
+                            <div id="programTableDays">
                                 <!--programDay2-->
                                 <div id="programDay2">
 
@@ -921,26 +969,32 @@
                                         <p><b>Morning Session 1</b>  <i>Start at 9 AM</i></p>
                                     </div>
                                     <div class="programTableContentUnevenContrib">
-                                        <div class="programTableItems"><p><b>Rogier Mars. </b><i> Exploiting common spaces for comparative neuroscience<br /><br /></i></p></div>
+                                        <div class="programTableItems1"><p><b>Rogier Mars </b></p></div>
+                                        <div class="programTableItems2"><p><i> Exploiting common spaces for comparative neuroscience</i></p></div>
                                     </div>
                                     <div class="programTableContentEvenContrib">
-                                        <div class="programTableItems"><p><b>Katja Heuer. </b><i> The emergence of brain organisation through the lense of evolution</i></p></div>
+                                        <div class="programTableItems1"><p><b>Katja Heuer </b></p></div>
+                                        <div class="programTableItems2"><p><i> The emergence of brain organisation through the lense of evolution</i></p></div>
                                         <!-- The emergence of brain organisation through a comparative approach -->
                                         <!-- The emergence of brain organisation in a cross-species comparative framework -->
                                         <!-- The emergence of brain organisation in a comparative space -->
                                     </div>
                                     <div class="programTableContentUnevenContrib">
-                                        <div class="programTableItems"><p><b>Barbara Finlay. </b><i> Self-organization in the forebrain: propagation and segregation<br /><br /></i></p></div>
+                                        <div class="programTableItems1"><p><b>Barbara Finlay </b></p></div>
+                                        <div class="programTableItems2"><p><i> Self-organization in the forebrain: propagation and segregation</i></p></div>
                                     </div>
                                     <div class="programTableContentEvenContrib">
-                                        <div class="programTableItems"><p><b>Robert Barton. </b><i> Title to be announced</i></p></div>
+                                        <div class="programTableItems1"><p><b>Robert Barton </b></p></div>
+                                        <div class="programTableItems2"><p><i> Title to be announced</i></p></div>
                                     </div>
 
                                     <div class="programTableContentUneven">
-                                        <div class="programTableItems"><p>Coffee break <i>11–11.10</i></p></div>
+                                        <div class="programTableItems1"><p>Coffee break</p></div>
+                                        <div class="programTableItems2"><p><i>11–11.10</i></p></div>
                                     </div>
-                                    <div class="programTableContentEven">
-                                        <div class="programTableItems"><p>Poster pitches <i>11.10–11.15</i></p></div>
+                                    <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>Poster pitches</b></p></div>
+                                        <div class="programTableItems2"><p><i>11.10–11.15</i></p></div>
                                     </div>
 
                                     <!-- Morning session 2 Day 2 -->
@@ -948,24 +1002,30 @@
                                         <p><b>Morning Session 2</b> <i>Start at 11:15 AM</i></p>
                                     </div>
                                     <div class="programTableContentUnevenContrib">
-                                        <div class="programTableItems"><p><b>Clément Garin. </b> <i>Structural, functional, and metabolic hallmarks of mammalian brain evolution<br /><br /></i></p></div>
+                                        <div class="programTableItems1"><p><b>Clément Garin </b></p></div>
+                                        <div class="programTableItems2"><p><i>Structural, functional, and metabolic hallmarks of mammalian brain evolution</i></p></div>
                                     </div>
                                     <div class="programTableContentEvenContrib">
-                                        <div class="programTableItems"><p><b>Kep Kee Loh. </b> <i>Title to be announced<br /><br /><br /></i></p></div>
+                                        <div class="programTableItems1"><p><b>Kep Kee Loh </b></p></div>
+                                        <div class="programTableItems2"><p><i>Title to be announced</i></p></div>
                                     </div>
                                     <div class="programTableContentUnevenContrib">
-                                        <div class="programTableItems"><p><b>Sam Vickery. </b> <i>Evolutionary Investigation of Brain Aging in Humans and Chimpanzees</i></p></div>
+                                        <div class="programTableItems1"><p><b>Shaun Warrington </b></p></div>
+                                        <div class="programTableItems2"><p><i>Concurrent mapping of brain ontogeny and phylogeny within a common space</i></p></div>
                                     </div>
                                     <div class="programTableContentEvenContrib">
-                                        <div class="programTableItems"><p><b>Shaun Warrington . </b> <i>Concurrent mapping of brain ontogeny and phylogeny within a common space<br /><br /></i></p></div>
+                                        <div class="programTableItems1"><p><b>Sam Vickery </b></p></div>
+                                        <div class="programTableItems2"><p><i>Evolutionary Investigation of Brain Aging in Humans and Chimpanzees</i></p></div>
                                     </div>
 
                                     <div class="programTableContentUneven">
-                                        <div class="programTableItems"><p><b>Lunch break </b> <i>1.15–2.20 PM</i></p></div>
+                                        <div class="programTableItems1"><p>Lunch break </p></div>
+                                        <div class="programTableItems2"><p><i>1.15–2.20 PM</i></p></div>
                                     </div>
 
-                                    <div class="programTableContentEven">
-                                        <div class="programTableItems"><p><b>Posters </b> <i>2.30–3 PM</i></p></div>
+                                    <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>Posters </b></p></div>
+                                        <div class="programTableItems2"><p><i>2.30–3 PM</i></p></div>
                                     </div>
 
                                     <!-- Afternoon session 1 Day 2 -->
@@ -973,17 +1033,21 @@
                                         <p><b>Afternoon session 1 </b><i>Start at 3 PM</i></p>
                                     </div>
                                     <div class="programTableContentUnevenContrib">
-                                        <div class="programTableItems"><p><b>Scott Love. </b><i> fMRI of the sheep auditory cortex</i></p></div>
+                                        <div class="programTableItems1"><p><b>Scott Love </b></p></div>
+                                        <div class="programTableItems2"><p><i> fMRI of the sheep auditory cortex</i></p></div>
                                     </div>
                                     <div class="programTableContentEvenContrib">
-                                        <div class="programTableItems"><p><b>Stefan Everling. </b><i> The marmoset default-mode network identified by deactivations in task-based fMRI studies</i></p></div>
+                                        <div class="programTableItems1"><p><b>Stefan Everling</b></p></div>
+                                        <div class="programTableItems2"><p><i> The marmoset default-mode network identified by deactivations in task-based fMRI studies</i></p></div>
                                     </div>
                                     <div class="programTableContentUnevenContrib">
-                                        <div class="programTableItems"><p><b>Ravi Menon. </b><i> Talk title to be announced</i></p></div>
+                                        <div class="programTableItems1"><p><b>Ravi Menon </b></p></div>
+                                        <div class="programTableItems2"><p><i> Talk title to be announced</i></p></div>
                                     </div>
 
                                     <div class="programTableContentUneven">
-                                        <div class="programTableItems"><p><b>Coffee break</b> <i>4.30–4.45 PM</i></p></div>
+                                        <div class="programTableItems1"><p>Coffee break</p></div>
+                                        <div class="programTableItems2"><p><i>4.30–4.45 PM</i></p></div>
                                     </div>
 
                                     <!-- Afternoon session 2 Day 2 -->
@@ -991,20 +1055,33 @@
                                         <p><b>Afternoon session 2 </b><i>Start at 4.45 PM</i></p>
                                     </div>
                                     <div class="programTableContentEvenContrib">
-                                        <div class="programTableItems"><p><b>Alessandro Gozzi (online). </b><i> Evolutionarily conserved fMRI network dynamics in humans, macaques and rodents</i></p></div>
+                                        <div class="programTableItems1"><p><b>Alessandro Gozzi (online) </b></p></div>
+                                        <div class="programTableItems2"><p><i> Evolutionarily conserved fMRI network dynamics in humans, macaques and rodents</i></p></div>
                                     </div>
                                     <div class="programTableContentUnevenContrib">
-                                        <div class="programTableItems"><p><b>Eduardo Garza-Villarreal (online). </b><i> Talk title to be announced<br /><br /></i></p></div>
+                                        <div class="programTableItems1"><p><b>Eduardo Garza-Villarreal (online) </b></p></div>
+                                        <div class="programTableItems2"><p><i> Talk title to be announced</i></p></div>
                                     </div>
                                     <div class="programTableContentEvenContrib">
-                                        <div class="programTableItems"><p><b>End of sessions </b><i> 5.45 PM</i></p></div>
+                                        <div class="programTableItems1"><p><b>End of sessions </b></p></div>
+                                        <div class="programTableItems2"><p><i> 5.45 PM</i></p></div>
+                                    </div>
+                                    <!-- Social & Dinner Day 2 -->
+                                    <div class="programSessions">
+                                        <p><b>Social & Dinner </b><i>Start at 6.30 PM</i><br />
+                                            We would like to meet you all at <a style="color:black;" href="https://www.groundcontrolparis.com" target="_blank">Ground Control</a> to continue our discussions over drinks & dinner in a creative ambiente with homemade <a style="color:black;" href="https://www.tripadvisor.com/Attraction_Review-g187147-d8472254-Reviews-Ground_Countrol-Paris_Ile_de_France.html#/media-atf/8472254/438636005:p/?albumid=-160&type=0&category=-160" target="_blank">food from countries around the world</a>. You can check out <a style="color:black;" href="https://www.tripadvisor.com/Attraction_Review-g187147-d8472254-Reviews-Ground_Countrol-Paris_Ile_de_France.html#/media-atf/8472254/701245590:p/?albumid=-160&type=0&category=-160" target="_blank">photos of the place</a>. There is a direct metro line 6 connection from <a href="https://www.google.com/maps/dir/Pasteur+Institute,+25-28+Rue+du+Dr+Roux,+75015+Paris/Ground+Control,+81+Rue+du+Charolais,+75012+Paris/@48.8500241,2.3088064,13z/am=t/data=!3m1!5s0x47e66e038d21afeb:0xbe766aded6ca7d70!4m14!4m13!1m5!1m1!1s0x47e670376abf4b5b:0xe831277d10f68655!2m2!1d2.3108871!2d48.8407106!1m5!1m1!1s0x47e672119404f509:0xd947463a47d9e1e7!2m2!1d2.381571!2d48.843944!3e3?entry=ttu" target="_blank" style="color:black;">station Pasteur to station Paris Bercy.</a>
+                                        </p>
                                     </div>
 
                                 </div> <!--programDay2-->
+                            </div>
+
+                            <div><p style="line-height: 6rem;"><br /></p></div>
 
 
 
-                                <!-- Programm day 3-->
+                            <!-- Programm day 3-->
+                            <div id="programTableDays">
                                 <div id="programDay3">
 
                                     <div class="programDayHeader">
@@ -1016,23 +1093,29 @@
                                         <p><b>Morning Session 1</b>  <i>Start at 9 AM</i></p>
                                     </div>
                                     <div class="programTableContentUnevenContrib">
-                                        <div class="programTableItems"><p><b>Kristina Kverková. </b><i> Neurons by numbers: Patterns and drivers of vertebrate brain evolution<br /><br /></i></p></div>
+                                        <div class="programTableItems1"><p><b>Kristina Kverková</b></p></div>
+                                        <div class="programTableItems2"><p><i> Neurons by numbers: Patterns and drivers of vertebrate brain evolution</i></p></div>
                                     </div>
                                     <div class="programTableContentEvenContrib">
-                                        <div class="programTableItems"><p><b>Pierre Estienne. </b><i> Different ways of evolving tool-using brains in teleosts and amniotes</i></p></div>
+                                        <div class="programTableItems1"><p><b>Pierre Estienne</b></p></div>
+                                        <div class="programTableItems2"><p><i> Different ways of evolving tool-using brains in teleosts and amniotes</i></p></div>
                                     </div>
                                     <div class="programTableContentUnevenContrib">
-                                        <div class="programTableItems"><p><b>Carmen Falcone. </b><i> Title to be announced</i></p></div>
+                                        <div class="programTableItems1"><p><b>Carmen Falcone</b></p></div>
+                                        <div class="programTableItems2"><p><i> Title to be announced</i></p></div>
                                     </div>
                                     <div class="programTableContentEvenContrib">
-                                        <div class="programTableItems"><p><b>Chris Klink. </b><i> Multi-scale mechanisms of vision & cognition<br /><br /><br /></i></p></div>
+                                        <div class="programTableItems1"><p><b>Chris Klink</b></p></div>
+                                        <div class="programTableItems2"><p><i> Multi-scale mechanisms of vision & cognition</i></p></div>
                                     </div>
 
                                     <div class="programTableContentUneven">
-                                        <div class="programTableItems"><p>Coffee break <i>11–11.10</i></p></div>
+                                        <div class="programTableItems1"><p>Coffee break</p></div>
+                                        <div class="programTableItems2"><p><i>11–11.10</i></p></div>
                                     </div>
-                                    <div class="programTableContentEven">
-                                        <div class="programTableItems"><p>Poster pitches <i>11.10–11.15</i></p></div>
+                                    <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>Poster pitches</b></p></div>
+                                        <div class="programTableItems2"><p><i>11.10–11.15</i></p></div>
                                     </div>
 
                                     <!-- Morning session 2 Day 3 -->
@@ -1040,24 +1123,30 @@
                                         <p><b>Morning Session 2</b> <i>Start at 11:15 AM</i></p>
                                     </div>
                                     <div class="programTableContentUnevenContrib">
-                                        <div class="programTableItems"><p><b>Daniel Margulies. </b> <i>To be confirmed<br /><br /><br /><br /></i></p></div>
+                                        <div class="programTableItems1"><p><b>Adrien Meguerditchian</b></p></div>
+                                        <div class="programTableItems2"><p><i>Title to be announced</i></p></div>
                                     </div>
                                     <div class="programTableContentEvenContrib">
-                                        <div class="programTableItems"><p><b>Adrien Meguerditchian. </b> <i>Title to be announced<br /><br /></i></p></div>
+                                        <div class="programTableItems1"><p><b>Simone Pika</b></p></div>
+                                        <div class="programTableItems2"><p><i>Title to be announced</i></p></div>
                                     </div>
                                     <div class="programTableContentUnevenContrib">
-                                        <div class="programTableItems"><p><b>Simone Pika. </b> <i>Title to be announced<br /><br /><br /></i></p></div>
+                                        <div class="programTableItems1"><p><b>Jerome Sallet</b></p></div>
+                                        <div class="programTableItems2"><p><i> On the evolutionary roots of human social cognition</i></p></div>
                                     </div>
                                     <div class="programTableContentEvenContrib">
-                                        <div class="programTableItems"><p><b>Jerome Sallet. </b><i> On the evolutionary roots of human social cognition</i></p></div>
+                                        <div class="programTableItems1"><p><b>Daniel Margulies</b></p></div>
+                                        <div class="programTableItems2"><p><i>To be confirmed</i></p></div>
                                     </div>
 
                                     <div class="programTableContentUneven">
-                                        <div class="programTableItems"><p><b>Lunch break </b> <i>1.15–2.20 PM</i></p></div>
+                                        <div class="programTableItems1"><p>Lunch break</p></div>
+                                        <div class="programTableItems2"><p><i>1.15–2.20 PM</i></p></div>
                                     </div>
 
-                                    <div class="programTableContentEven">
-                                        <div class="programTableItems"><p><b>Posters </b> <i>2.30–3 PM</i></p></div>
+                                    <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>Posters </b></p></div>
+                                        <div class="programTableItems2"><p><i>2.30–3 PM</i></p></div>
                                     </div>
 
                                     <!-- Afternoon session 1 Day 3 -->
@@ -1065,17 +1154,21 @@
                                         <p><b>Afternoon session 1 </b><i>Start at 3 PM</i></p>
                                     </div>
                                     <div class="programTableContentUnevenContrib">
-                                        <div class="programTableItems"><p><b>Leandro Aristide (online). </b><i> Talk title to be announced</i></p></div>
+                                        <div class="programTableItems1"><p><b>Leandro Aristide (online)</b></p></div>
+                                        <div class="programTableItems2"><p><i> Title to be announced</i></p></div>
                                     </div>
                                     <div class="programTableContentEvenContrib">
-                                        <div class="programTableItems"><p><b>Roberto Toro. </b><i> To be announced<br /><br /></i></p></div>
+                                        <div class="programTableItems1"><p><b>Roberto Toro</b></p></div>
+                                        <div class="programTableItems2"><p><i> Title to be announced</i></p></div>
                                     </div>
                                     <div class="programTableContentUnevenContrib">
-                                        <div class="programTableItems"><p><b>Sofie Valk. </b><i> Title to be announced</i></p></div>
+                                        <div class="programTableItems1"><p><b>Sofie Valk</b></p></div>
+                                        <div class="programTableItems2"><p><i> Title to be announced</i></p></div>
                                     </div>
 
                                     <div class="programTableContentUneven">
-                                        <div class="programTableItems"><p><b>Coffee break</b> <i>4.30–4.45 PM</i></p></div>
+                                        <div class="programTableItems1"><p>Coffee break</p></div>
+                                        <div class="programTableItems2"><p><i>4.30–4.45 PM</i></p></div>
                                     </div>
 
                                     <!-- Afternoon session 2 Day 3 -->
@@ -1083,43 +1176,101 @@
                                         <p><b>Afternoon session 2 </b><i>Start at 4.45 PM</i></p>
                                     </div>
                                     <div class="programTableContentUnevenContrib">
-                                        <div class="programTableItems"><p><b>Christin Charvet (online). </b><i> Translating time from multiple scales of organization<br /><br /></i></p></div>
+                                        <div class="programTableItems1"><p><b>Christin Charvet (online)</b></p></div>
+                                        <div class="programTableItems2"><p><i> Translating time from multiple scales of organization</i></p></div>
                                     </div>
                                     <div class="programTableContentEvenContrib">
-                                        <div class="programTableItems"><p><b>Selim Natahi. </b><i> To be confirmed<br /><br /><br /></i></p></div>
+                                        <div class="programTableItems1"><p><b>Selim Natahi</b></p></div>
+                                        <div class="programTableItems2"><p><i> To be confirmed</i></p></div>
                                     </div>
                                     <div class="programTableContentUnevenContrib">
-                                        <div class="programTableItems"><p><b>Alexandra de Sousa (online). </b><i> Title to be announced</i></p></div>
+                                        <div class="programTableItems1"><p><b>Alexandra de Sousa (online)</b></p></div>
+                                        <div class="programTableItems2"><p><i> From Fossils to Mind</i></p></div>
                                     </div>
 
                                     <div class="programTableContentUneven">
-                                        <div class="programTableItems"><p><b>Coffee break</b> <i>6.15–6.20 PM</i></p></div>
+                                        <div class="programTableItems1"><p>Coffee break</p></div>
+                                        <div class="programTableItems2"><p><i>6.15–6.20 PM</i></p></div>
                                     </div>
 
                                     <!-- Discussion -->
                                     <div class="programSessions">
-                                        <div class="programTableItems"><p><b>Discussion </b> <i>6.20–7 PM</i></p></div>
+                                        <div class="programTableItems1"><p><b>Discussion</b></p></div>
+                                        <div class="programTableItems2"><p><i>6.20–7 PM</i></p></div>
                                     </div>
                                     <div class="programTableContentUnevenContrib">
-                                        <div class="programTableItems"><p>surface vs.volume registration for inter-species comparison</p></div>
+                                        <div class="programTableItems"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;surface vs.volume registration for inter-species comparison</p></div>
                                     </div>
                                     <div class="programTableContentEvenContrib">
-                                        <div class="programTableItems"><p>common spaces</p></div>
+                                        <div class="programTableItems"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;common spaces</p></div>
                                     </div>
                                     <div class="programTableContentUnevenContrib">
-                                        <div class="programTableItems"><p>evolutionary vs. translational approaches: different sides of the same medal?</p></div>
+                                        <div class="programTableItems"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;evolutionary vs. translational approaches: different sides of the same medal?</p></div>
                                     </div>
 
                                     <div class="programTableContentEvenContrib">
-                                        <div class="programTableItems"><p><b>End of sessions </b><i> 7 PM</i></p></div>
+                                        <div class="programTableItems1"><p><b>End of sessions </b></p></div>
+                                        <div class="programTableItems2"><p><i> 7 PM</i></p></div>
                                     </div>
                                     <div class="programTableContentUneven">
-                                        <div class="programTableItems"><p><b>Roundup & goodbeyes for some who leave</b> <i>7–7.10 PM</i></p></div>
+                                        <div class="programTableItems1"><p><b>Roundup & goodbeyes for some who leave</b></p></div>
+                                        <div class="programTableItems2"><p><i>7–7.10 PM</i></p></div>
+                                    </div>
+
+                                    <!-- Dinner & Social Day 3 -->
+                                    <div class="programSessions">
+                                        <p><b>Social & Dinner </b><i>Start at 8 PM</i><br />
+                                            We would like to meet you all at <a style="color:black;" href="https://lecomptoirgeneral.com/en" target="_blank">Le Comptoir Général</a> to continue our discussions over drinks & dinner in a nice ambiente close to Canal St Martin, a wonderful neighbourhood. You can check out some <a style="color:black;" href="https://www.google.com/maps/place/Le+Comptoir+G%C3%A9n%C3%A9ral/@48.8724307,2.3648216,3a,75y,90t/am=t/data=!3m8!1e2!3m6!1sAF1QipNFvCEM4hZVPLzSX1x-71Hs53lZyDxpBwQrGWy9!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNFvCEM4hZVPLzSX1x-71Hs53lZyDxpBwQrGWy9%3Dw203-h114-k-no!7i4080!8i2296!4m24!1m16!4m15!1m6!1m2!1s0x47e670376561bad1:0xfadcf3194280f869!2sInstitut+Pasteur,+Paris!2m2!1d2.3101879!2d48.840036!1m6!1m2!1s0x47e66e0bca348265:0x3464e454c1ba8775!2sLe+Comptoir+G%C3%A9n%C3%A9ral,+84+Quai+de+Jemmapes,+75010+Paris!2m2!1d2.3649556!2d48.8724326!3e3!3m6!1s0x47e66e0bca348265:0x3464e454c1ba8775!8m2!3d48.8724241!4d2.3649709!10e5!16s%2Fg%2F1tmcljrz?entry=ttu" target="_blank">photos of the place</a>. There is a one-change metro connection (line 6 + 5) from <a href="https://www.google.com/maps/dir/Institut+Pasteur,+Paris/Le+Comptoir+G%C3%A9n%C3%A9ral,+84+Quai+de+Jemmapes,+75010+Paris/@48.8528941,2.2874498,13z/am=t/data=!4m14!4m13!1m5!1m1!1s0x47e670376561bad1:0xfadcf3194280f869!2m2!1d2.3101879!2d48.840036!1m5!1m1!1s0x47e66e0bca348265:0x3464e454c1ba8775!2m2!1d2.3649556!2d48.8724326!3e3?entry=ttu" target="_blank" style="color:black;">station Pasteur to station Place d'Italie to Jacques Bonsergent.</a>
+                                        </p>
                                     </div>
 
                                 </div> <!--programDay3-->
 
                             </div> <!--programTableDays-->
+
+
+                            <div><p style="line-height: 6rem;"><br /></p></div>
+
+                            <!-- Programm day 4-->
+                            <div id="programTableDays">
+                                <div id="programDay3">
+
+                                    <div class="programDayHeader">
+                                        <p><b>September 22</b></p>
+                                    </div>
+
+                                    <!-- Morning session 1 Day 3 -->
+                                    <div class="programSessions">
+                                        <p><b>Hackathon day</b>  <i>Start at 10 AM</i></p>
+                                    </div>
+                                    <div class="programSessions">
+                                        <p>This day has no fixed schedule but is for people to connect around their topics of interest, discuss, and start collaborations. It can have a set of unconference sessions where people can spontaneously present topics that are of interest to a larger group.</p>
+                                    </div>
+                                    <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>Discussions</b></p></div>
+                                        <div class="programTableItems2"><p><i>around croissant & coffee and a gigantic white board</i></p></div>
+                                    </div>
+                                    <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>Unconference sessions</b></p></div>
+                                        <div class="programTableItems2"><p><i>Spontaneous presentations on the big screen or the projector that emerge from the ongoing discussions</i></p></div>
+                                    </div>
+                                    <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>Collaborative projects</b></p></div>
+                                        <div class="programTableItems2"><p><i>Finding collaborators and start working on projects</i></p></div>
+                                    </div>
+
+                                    <!-- Social Day 4 -->
+                                    <div class="programSessions">
+                                        <p><b>Social & Dinner </b><i>Start at 6 PM</i><br />
+                                            <!-- We would like to meet you all at <a style="color:black;" href="https://lecomptoirgeneral.com/en" target="_blank">Le Comptoir Général</a> to continue our discussions over drinks & dinner in a nice ambiente close to Canal St Martin, a wonderful neighbourhood. You can check out some <a style="color:black;" href="https://www.google.com/maps/place/Le+Comptoir+G%C3%A9n%C3%A9ral/@48.8724307,2.3648216,3a,75y,90t/am=t/data=!3m8!1e2!3m6!1sAF1QipNFvCEM4hZVPLzSX1x-71Hs53lZyDxpBwQrGWy9!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNFvCEM4hZVPLzSX1x-71Hs53lZyDxpBwQrGWy9%3Dw203-h114-k-no!7i4080!8i2296!4m24!1m16!4m15!1m6!1m2!1s0x47e670376561bad1:0xfadcf3194280f869!2sInstitut+Pasteur,+Paris!2m2!1d2.3101879!2d48.840036!1m6!1m2!1s0x47e66e0bca348265:0x3464e454c1ba8775!2sLe+Comptoir+G%C3%A9n%C3%A9ral,+84+Quai+de+Jemmapes,+75010+Paris!2m2!1d2.3649556!2d48.8724326!3e3!3m6!1s0x47e66e0bca348265:0x3464e454c1ba8775!8m2!3d48.8724241!4d2.3649709!10e5!16s%2Fg%2F1tmcljrz?entry=ttu" target="_blank">photos of the place</a>. There is a one-change metro connection (line 6 + 5) from <a href="https://www.google.com/maps/dir/Institut+Pasteur,+Paris/Le+Comptoir+G%C3%A9n%C3%A9ral,+84+Quai+de+Jemmapes,+75010+Paris/@48.8528941,2.2874498,13z/am=t/data=!4m14!4m13!1m5!1m1!1s0x47e670376561bad1:0xfadcf3194280f869!2m2!1d2.3101879!2d48.840036!1m5!1m1!1s0x47e66e0bca348265:0x3464e454c1ba8775!2m2!1d2.3649556!2d48.8724326!3e3?entry=ttu" target="_blank" style="color:black;">station Pasteur to station Place d'Italie to Jacques Bonsergent.</a> -->
+                                        </p>
+                                    </div>
+
+                                </div> <!--programDay3-->
+
+                            </div> <!--programTableDays-->
+
+
 
                         </div> <!--programTableContainer-->
 
