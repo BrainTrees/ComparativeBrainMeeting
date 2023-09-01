@@ -737,6 +737,36 @@
             /* background: rgba(15,15,15,0.1); */
             /* margin: 1%; */
         }
+        #logoColumns {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: baseline;
+            position: relative;
+            /* background: rgba(150,150,150,0.1); */
+        }
+        /* #logoCardContainer {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: flex-start;
+            position: relative;
+            align-items: center;
+            padding-left: 1%;
+            padding-right: 1%;*/
+            /* margin-right: 1%; */
+            /* background: rgba(150,150,150,0.1); */
+        /*} */
+        .logoCard {
+            flex: 1 1 25%;
+            /* flex-direction: column; */
+            padding: 1%;
+            position: relative;
+            align-items: center;
+            /* background: rgba(15,15,15,0.1); */
+            /* margin: 1%; */
+        }
 
         [v-cloak] {
             display: none;
@@ -1372,13 +1402,13 @@
                                         <div class="organizerCard">
                                             <p>
                                                 <a href="https://research.pasteur.fr/en/member/katja-heuer" target="_blank">Katja Heuer</a> (postdoc in the Applied and Theoretical Neuroanatomy lab, Insitut Pasteur)<br/>
-                                                <a style="font-weight: 300;" href="https://twitter.com/katjaQheuer" target="_blank"><img style="width:1.8rem;transform:translate(0,0px);margin-right:5px;" src="./images/landing/twitter_white.png" /img>@katjaqheuer</a>
+                                                <a style="font-weight: 300;" href="https://twitter.com/katjaQheuer" target="_blank"><img style="width:1.8rem;transform:translate(0,0px);margin-right:5px;" src="./images/landing/twitter_white.png" />@katjaqheuer</a>
                                             </p>
                                         </div>
                                         <div class="organizerCard">
                                             <p>
                                                 <a href="https://www.ndcn.ox.ac.uk/team/rogier-mars" target="_blank">Rogier Mars</a> (Neuroecology lab, Donders Institute for Brain, Cognition and Behaviour, Nijmegen; Centre for Functional MRI of the Brain, Oxford) <br/>
-                                                <a style="font-weight: 300;" href="https://twitter.com/NeuroecologyLab" target="_blank"><img style="width:1.8rem;transform:translate(0,0px);margin-right:5px;" src="./images/landing/twitter_white.png" /img>@NeuroecologyLab</a>
+                                                <a style="font-weight: 300;" href="https://twitter.com/NeuroecologyLab" target="_blank"><img style="width:1.8rem;transform:translate(0,0px);margin-right:5px;" src="./images/landing/twitter_white.png" />@NeuroecologyLab</a>
                                             </p>
                                         </div>
                                     </div><!--organizerColumn right-->
@@ -1386,13 +1416,13 @@
                                         <div class="organizerCard">
                                             <p>
                                                 <a href="https://research.pasteur.fr/en/member/roberto-toro" target="_blank">Roberto Toro</a> (Applied and Theoretical Neuroanatomy lab, Institut Pasteur Paris) <br/>
-                                                <a style="font-weight: 300;" href="https://twitter.com/R3RT0" target="_blank"><img style="width:1.8rem;transform:translate(0,0px);margin-right:5px;" src="./images/landing/twitter_white.png" /img>@R3RT0</a>
+                                                <a style="font-weight: 300;" href="https://twitter.com/R3RT0" target="_blank"><img style="width:1.8rem;transform:translate(0,0px);margin-right:5px;" src="./images/landing/twitter_white.png" />@R3RT0</a>
                                             </p>
                                         </div>
                                         <div class="organizerCard">
                                             <p>
                                                 <a href="https://english.tau.ac.il/profile/assafyan" target="_blank">Yaniv Assaf</a> (Yaniv Assaf Lab, Tel Aviv University)<br/>
-                                                <a style="font-weight: 300;" href="https://twitter.com/YanivAssaf" target="_blank"><img style="width:1.8rem;transform:translate(0,0px);margin-right:5px;" src="./images/landing/twitter_white.png" /img>@YanivAssaf</a>
+                                                <a style="font-weight: 300;" href="https://twitter.com/YanivAssaf" target="_blank"><img style="width:1.8rem;transform:translate(0,0px);margin-right:5px;" src="./images/landing/twitter_white.png" />@YanivAssaf</a>
                                             </p>
                                         </div>
                                     </div><!--organizerColumn right-->
@@ -1404,32 +1434,28 @@
                     </div> <!--row of organizer section-->
 
 
+                    <!-- Sponsors -->
                     <h4>We kindly thank the sponsors of our event</h4>
                     <div class="row">
 
                         <div id="programTableContainer">
                             <div class="programTableDescription" style="padding-bottom:2rem;">
-                                <div id="organizerColumns">
+                                <div id="logoColumns">
                                     <!-- <div id="organizerColumnLeft"> -->
-                                        <div class="organizerCard">
-                                            <p>
-                                                <a href="http://neuroanatomy.github.io"></a><br/>
-                                                <a style="font-weight: 300;" href="http://neuroanatomy.github.io"><img style="width:40%; max-width:50%;transform:translate(0%,0px);margin:5px;" src="./images/logo/naat-bw.png" /img></a>
-                                            </p>
+                                    <!-- <div id="logoCardContainer"> -->
+                                        <div class="logoCard">
+                                            <a style="font-weight: 300;" href="http://neuroanatomy.github.io"><img style="width:40%; max-width:50%;transform:translate(0%,0px);margin:5px;" src="./images/logo/naat-bw.png" /></a>
                                         </div>
-                                        <div class="organizerCard">
-                                            <p>
-                                                <a href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships"></a><br/>
-                                                <a style="font-weight: 300;" href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships"><img style="width:40%; max-width:50%;transform:translate(0%,0px);margin:5px;" src="./images/logo/marie-curie_greyscale_smooth_inv_curv.png" /img></a>
-                                            </p>
+                                        <div class="logoCard">
+                                            <a style="font-weight: 300;" href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships"><img style="width:40%; max-width:50%;transform:translate(0%,0px);margin:5px;" src="./images/logo/marie-curie_greyscale_smooth_inv_curv.png" /></a>
                                         </div>
-                                        <div class="organizerCard">
-                                            <p style="transform:translate(0,80%)">
-                                                <a href="https://www.pasteur.fr/en"></a><br/>
-                                                <a style="font-weight: 300;" href="https://www.pasteur.fr/en"><img style="width:70%; max-width:70%;transform:translate(0%,-6rem);margin:5px;" src="./images/logo/institut_pasteur_logo_b.png" /img></a>
-                                            </p>
+                                        <div class="logoCard">
+                                            <a style="font-weight: 300;" href="https://www.pasteur.fr/en"><img style="width:70%; max-width:70%;transform:translate(0%,0px);margin:5px;" src="./images/logo/institut_pasteur_logo_b.png" /></a>
                                         </div>
-
+                                        <div class="logoCard">
+                                            <a style="font-weight: 300;" href="https://www.inception-program.fr"><img style="width:40%; max-width:40%;transform:translate(0%,0px);margin:5px;" src="./images/logo/inception_bw.png" /></a>
+                                        </div>
+                                    <!-- </div> -->
                                 </div> <!--sponsororganizerColumns-->
                             </div> <!--programTableDescription-->
 
