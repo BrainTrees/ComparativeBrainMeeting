@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Comparative Brain Meeting 2026</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet" type="text/css">
+        <link href="https://cdn.jsdelivr.net/npm/quasar@1.9.10/dist/quasar.min.css" rel="stylesheet" type="text/css">
+        <link href="https://cdn.jsdelivr.net/npm/animate.css@^3.5.2/animate.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
+
+        <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="./js/main.js"></script>
+    </head>
+
+    <style>
+        html, body {
+            margin:0;
+            padding:0;
+        }
+        a {
+            color: white;
+            font-weight: bold;
+        }
+        a:hover, a:focus, a:active {
+            color: #AAA;
+        }
+        .textparagraph p {
+            width: 100%;
+            position:relative;
+            padding: 1rem;
+            background: rgba(0,0,0,0.3);
+            font-weight: 300;
+        }
+        #program p {
+            width: 100%;
+            position:relative;
+            margin: 0;
+            font-weight: 300;
+        }
+        #program p blu {
+            color: #c0fefe;
+        }
+        #program pg {
+            width: 100%;
+            position:relative;
+            margin: 0.3rem 0;
+            line-height: 1.8;
+            font-weight: 300;
+            color: #aaaaaa;
+        }
+        #landinggraph a, #landing a, #program a, #bestexperience a, #participants a {
+            font-weight: 700;
+            text-decoration: none;
+            border: none;
+        }
+        #landinggraph a:hover,
+        #landinggraph a:focus,
+        #landinggraph a:active,
+        #landing a:hover,
+        #landing a:focus,
+        #landing a:active,
+        #program a:hover,
+        #program a:focus,
+        #program a:active,
+        #bestexperience a:hover,
+        #bestexperience a:focus,
+        #bestexperience a:active,
+        #participants a:hover,
+        #participants a:focus,
+        #participants a:active {
+            font-weight: 700;
+            text-decoration: none;
+            border: none;
+            color: grey;
+        }
+        #organizers a {
+            font-weight: 500;
+            text-decoration: none;
+            border: none;
+        }
+        #organizers a:hover,
+        #organizers a:focus,
+        #organizers a:active {
+            font-weight: 500;
+            text-decoration: none;
+            border: none;
+            color: grey;
+        }
+        #CoC p {
+            width: 100%;
+            position:relative;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+        #CoC a {
+            font-weight: 500;
+            text-decoration: none;
+            border: none;
+        }
+        #CoC a:hover,#CoC a:focus,#CoC a:active {
+            font-weight: 500;
+            text-decoration: none;
+            border: none;
+            color: grey;
+        }
+        h4 {
+            font-weight: 600;
+        }
+
+        /* first page container */
+        #community {
+            display:flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+            background-image: url("./images/landing/brainzzz_xs_dark.jpg");
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-position: center;
+        }
+        #conftitle h1 {
+            font-family: 'Roboto', sans-serif !important;
+            line-height: 1.2 !important;
+            letter-spacing: normal;
+            font-size: 6.8rem;
+            font-weight: 900;
+            opacity: 1.0;
+        }
+        #conftitle {
+            padding-top: 30vh;
+            padding-left: 15%;
+            flex-shrink: 1;
+            font-family: 'Roboto', sans-serif !important;
+            line-height: 1.2 !important;
+            letter-spacing: normal;
+            font-size: 4.8rem;
+            font-weight: 900;
+            opacity: 1.0;
+            background: none!important;
+            z-index:51;
+        }
+
+        #landing {
+            padding-top: 3rem;
+            padding-bottom: 6rem;
+            background: rgba(0,0,0,0.8);
+            background-image: url('./images/landing/brainzzz_xs_dark.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-position: center;
+            filter: grayscale(1%) contrast(110%) opacity(30%);
+            -webkit-filter: grayscale(1%) contrast(110%) opacity(100%);
+        }
+        #landinggraph {
+            padding-top: 3rem;
+            padding-bottom: 6rem;
+            background: rgba(0,0,0,0.8);
+            background-image: url('./images/landing/Cerebellum56mammals_xs_dark.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-position: center;
+            filter: grayscale(1%) contrast(110%) opacity(30%);
+            -webkit-filter: grayscale(1%) contrast(110%) opacity(100%);
+        }
+        #landing p, #landinggraph p, #bestexperience p, #organizers p {
+            background: none;
+            padding-top: 0.6rem;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        #program {
+            padding-bottom: 6rem;
+            background-color: rgba(0,0,0,0.0);
+            background-image: url('./images/landing/dolphin_RoboKat_xs_dark.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-position: center;
+            filter: grayscale(1%) contrast(110%) opacity(30%);
+            -webkit-filter: grayscale(1%) contrast(110%) opacity(100%);
+        }
+        #program .container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        #programTableContainer {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            position: relative;
+        }
+        .programTableHeader {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            position: relative;
+        }
+        #programTableDays {
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            width: 100%;
+            border: 1px solid #666666;
+        }
+        .programDayHeader {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            position: relative;
+            padding-bottom: 2rem;
+        }
+        .programDayHeader p {
+            font-weight: 900!important;
+            font-size: x-large;
+        }
+        .programDay {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            justify-content: flex-start;
+            position: relative;
+            align-items: baseline;
+            padding-left: 1%;
+            padding-right: 1%;
+            padding-bottom: 1%;
+            background: rgba(15,15,15,0.8);
+            flex-shrink: 1;
+        }
+        .programDay p {
+            background: none;
+        }
+        .programSessions {
+            display: flex;
+            position: relative;
+            width: 100%;
+            flex-direction: row;
+            justify-content: flex-start;
+            background: rgba(255,255,255,0.8);
+            color: black;
+            padding-left: 1%;
+        }
+        .programSessionInfo {
+            display: flex;
+            position: relative;
+            width: 100%;
+            flex-direction: row;
+            justify-content: flex-start;
+            background: rgba(255,255,255,0.18);
+            color: white;
+            padding-left: 1%;
+        }
+        .programTableContentUnevenContrib {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: baseline;
+            align-content: space-between;
+            position: relative;
+            width: 100%;
+            margin: 0px;
+            z-index: 1;
+        }
+        .programTableContentEvenContrib {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: baseline;
+            align-content: space-between;
+            position: relative;
+            width: 100%;
+            background: rgba(255,255,255,0.02);
+            margin: 0px;
+            z-index: 1;
+        }
+        @media (max-width: 900px) {
+            .programTableContentUnevenContrib {
+                flex-direction: column;
+            }
+            .programTableContentEvenContrib {
+                flex-direction: column;
+            }
+            .programTableContentUnevenContrib > div:nth-child(1) > p {
+                font-weight: bold !important;
+            }
+            .programTableContentEvenContrib > div:nth-child(1) > p {
+                font-weight: bold !important;
+            }
+        }
+        .programTableContentUneven {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: baseline;
+            align-content: space-between;
+            position: relative;
+            width: 100%;
+            margin: 0px;
+            z-index: 1;
+        }
+        .programTableContentEven {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: baseline;
+            align-content: space-between;
+            position: relative;
+            width: 100%;
+            background: rgba(255,255,255,0.18);
+            margin: 0px;
+            z-index: 1;
+        }
+        .programTableItems1 {
+            border: 0;
+            flex: 1 1 20%;
+            position: relative;
+        }
+        .programTableItems2 {
+            border: 0;
+            flex: 1 1 55%;
+            position: relative;
+            margin: 0.5rem;
+        }
+        .programTableItems3 {
+            border: 0;
+            flex: 1 1 25%;
+            position: relative;
+            margin: 0.5rem;
+            text-align: right;
+        }
+
+        #bestexperience {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+            background: rgba(0,0,0,0.8);
+            background-image: url('./images/landing/surfs_xxs_dark.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-position: center;
+            filter: grayscale(1%) contrast(110%) opacity(30%);
+            -webkit-filter: grayscale(1%) contrast(110%) opacity(100%);
+        }
+        #bestexperience b {
+            font-weight: 600;
+        }
+
+        #posterlist {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+            background: rgba(0,0,0,0.8);
+            background-image: url('./images/landing/surfs_xxs_dark.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-position: center;
+            filter: grayscale(1%) contrast(110%) opacity(30%);
+            -webkit-filter: grayscale(1%) contrast(110%) opacity(100%);
+        }
+        #posterlist p {
+            line-height: 1.3;
+            font-size: 2rem;
+            font-weight: 300;
+            margin-top: 1rem;
+        }
+        .posterUneven {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: baseline;
+            align-content: space-between;
+            position: relative;
+            width: 100%;
+            background: rgba(50,50,50,0.9);
+            margin: 0px;
+            z-index: 1;
+        }
+        .posterEven {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: baseline;
+            align-content: space-between;
+            position: relative;
+            width: 100%;
+            background: rgba(20,20,20,0.7);
+            margin: 0px;
+            z-index: 1;
+        }
+
+        #participants {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+            background: rgba(0,0,0,0.8);
+            background-image: url('./images/landing/folding_xs.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-position: center;
+            filter: grayscale(1%) contrast(110%) opacity(30%);
+            -webkit-filter: grayscale(1%) contrast(110%) opacity(100%);
+        }
+        #participants p {
+            line-height: 1.6;
+            font-size: 2rem;
+            font-weight: 300;
+        }
+        .participantList {
+            column-count: 3;
+            column-gap: 2rem;
+        }
+        @media (max-width: 900px) {
+            .participantList {
+                column-count: 1;
+            }
+        }
+
+        #organizers {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+            background: rgba(0,0,0,0.8);
+            background-image: url('./images/landing/folding_xs.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-position: center;
+            filter: grayscale(1%) contrast(110%) opacity(30%);
+            -webkit-filter: grayscale(1%) contrast(110%) opacity(100%);
+        }
+        #organizerColumns {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: top;
+            position: relative;
+        }
+        #organizerColumnLeft {
+            display: flex;
+            width: 33%;
+            flex-direction: column;
+            justify-content: flex-start;
+            position: relative;
+            align-items: baseline;
+            padding-left: 1%;
+            padding-right: 1%;
+            margin-right: 2%;
+        }
+        #organizerColumnCenter {
+            display: flex;
+            width: 33%;
+            flex-direction: column;
+            justify-content: flex-start;
+            position: relative;
+            align-items: baseline;
+            padding-left: 1%;
+            padding-right: 1%;
+            margin-left: 1%;
+            margin-right: 1%;
+        }
+        #organizerColumnRight {
+            display: flex;
+            width: 33%;
+            flex-direction: column;
+            justify-content: flex-start;
+            position: relative;
+            align-items: baseline;
+            padding-left: 1%;
+            padding-right: 1%;
+            margin-left: 2%;
+        }
+        .organizerCard {
+            flex: 1 1 25%;
+            padding: 1%;
+            position: relative;
+        }
+        #logoColumns {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: baseline;
+            position: relative;
+        }
+        .logoCard {
+            flex: 1 1 25%;
+            padding: 1%;
+            position: relative;
+            align-items: center;
+        }
+
+        .col a:hover, .col a:focus, .col a:active, .text-h6 a:hover, .text-h6 a:focus, .text-h6 a:active {
+            color: grey!important;
+        }
+        .row {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+        .col {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
+        #cocSection {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+            background: rgba(0,0,0,0.85);
+        }
+        #cocSection p, #cocSection li {
+            line-height: 1.8;
+            font-size: 2rem;
+            font-weight: 300;
+        }
+        #cocSection h5 {
+            font-size: 2.2rem;
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+        }
+
+        [v-cloak] {
+            display: none;
+        }
+    </style>
+
+    <body>
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-lg fixed-top ">
+
+            <button class="navbar-toggler landing-page myCollapsedMenuBarIcon" id="myMenuBtn" type="button" data-toggle="collapse" data-target="#myMenu" aria-controls="myMenu" aria-expanded="false" aria-label="Toggle navigation" style="padding:0;border:none; width:1.5em;height:1.5em;" onclick="this.blur();">
+            </button>
+
+            <div class="collapse navbar-collapse" id="myMenu" style="width:100%;">
+                <ul class="navbar-nav mr-4" >
+                    <li class="nav-item">
+                        <a class="nav-link" data-value="landinggraph" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-value="program" href="#">Programme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-value="posterlist" href="#">Posters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-value="bestexperience" href="#">Location</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="q-app">
+
+            <!-- Landing page -->
+            <div class="row" id="community">
+                <div id="conftitle">
+                    <h1>Comparative Brain Meeting <br /><br /></h1>
+                    <h2>27&ndash;30 April 2026, Institut Pasteur, Paris</h2>
+                </div>
+            </div>
+
+            <!-- About section -->
+            <div class="row" id="landinggraph">
+                <div class="container" style="background: rgba(0,0,0,0.3);">
+                    <h4>Comparative Brain Meeting 2026</h4>
+                    <div class="row">
+                        <div id="programTableContainer">
+                            <div class="programTableDescription" style="margin-bottom:2rem;">
+                                <p>
+                                    The Comparative Brain Meeting aims at stimulating exchanges on brain evolution, its organisation, and development and comparative analyses across the tree of life.
+                                    It unites researchers from diverse backgrounds, exploring various species and employing a wide range of data modalities and scales, from cell counts to behaviour. Our goal is to facilitate cross-lab collaborations, share methods for comparative neuroanatomy, and build a coherent framework and a community for comparative neuroscience. This hybrid event offers both in-person and virtual participation. Join us in advancing the frontiers of comparative brain research.
+                                </p>
+                                <p>
+                                    The meeting will take place <b>27&ndash;30 April 2026 at Institut Pasteur</b>, 28 rue du Dr Roux, 75015 Paris. It will combine several topics: comparative MRI, comparative brain beyond MRI, fossils, histology, connectivity, brain development and behaviour, and a Hackathon Day to discuss questions and challenges that emerged from the meeting and start collaborative projects.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Programme -->
+            <div id="program" class="row">
+                <div class="container">
+                    <h4>Programme &mdash; 27&ndash;30 April 2026</h4>
+                    <div class="row">
+                        <div id="programTableContainer">
+
+                            <div class="textparagraph">
+                                <p>
+                                    The meeting spans 3 days of talks and poster sessions (27&ndash;29 April), followed by a Hackathon Day (30 April) to discuss questions & challenges that will have emerged from the meeting and start collaborative projects.
+                                </p>
+                                <p>
+                                    Here, you can find the program for the 3 days with scheduled presentations. The Hackathon day has no schedule to give space to spontaneous discussion and unconferences around coffee &amp; croissants and a gigantic white board.
+                                </p>
+                            </div>
+
+                            <!-- ===================== DAY 1 ===================== -->
+                            <div class="programTableHeader">
+                                <h5>Schedule</h5>
+                            </div>
+                            <div id="programTableDays">
+                                <div class="programDay" id="programDay1">
+
+                                    <div class="programDayHeader">
+                                        <p><b>Day 1 &mdash; Monday 27 April</b></p>
+                                    </div>
+
+                                    <!-- Welcome -->
+                                    <div class="programSessions">
+                                        <p><b>Welcome</b></p>
+                                    </div>
+                                    <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>9:00&ndash;9:05</b></p></div>
+                                        <div class="programTableItems2"><p><b>Katja Heuer, Roberto Toro, Julia Sliwa</b> &mdash; <i>Welcome &amp; Introduction</i></p></div>
+                                    </div>
+
+                                    <!-- Opening Keynote -->
+                                    <div class="programSessions">
+                                        <p><b>Opening Keynote</b></p>
+                                    </div>
+                                    <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>9:05&ndash;9:40</b></p></div>
+                                        <div class="programTableItems2"><p><b>Marie Sepp</b> &mdash; <i>Cellular development and evolutionacross mammals</i></p></div>
+                                    </div>
+
+                                    <!-- Session: Macro-Evolution & Fossils -->
+                                    <div class="programSessions">
+                                        <p><b>Macro-Evolution &amp; Fossils</b></p>
+                                    </div>
+                                    <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>9:45&ndash;10:10</b></p></div>
+                                        <div class="programTableItems2"><p><b>Robert Barton &amp; Chris Venditti</b> &mdash; <i>What evolutionary rates reveal about brain structure and function</i></p></div>
+                                    </div>
+                                    <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>10:10&ndash;10:30</b></p></div>
+                                        <div class="programTableItems2"><p><b>Am&eacute;lie Beaudet</b> &mdash; <i>Brain evolution within the hominin lineage</i></p></div>
+                                    </div>
+                                    <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>10:30&ndash;10:55</b></p></div>
+                                        <div class="programTableItems2"><p><b>Victor Giolland &amp; Ameline Bardo</b> &mdash; <i>Brain-behaviour coevolution</i></p></div>
+                                    </div>
+
+                                    <!-- Coffee break -->
+                                    <div class="programTableContentUneven">
+                                        <div class="programTableItems1"><p>Coffee break</p></div>
+                                        <div class="programTableItems2"><p><i>10:55&ndash;11:20</i></p></div>
+                                    </div>
+
+                                    <!-- Session: Brain Cells, Numbers & Diversity -->
+                                    <div class="programSessions">
+                                        <p><b>Brain Cells, Numbers &amp; Diversity</b></p>
+                                    </div>
+                                    <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>11:20&ndash;11:55</b></p></div>
+                                        <div class="programTableItems2"><p><b>Paul Manger</b> &mdash; <i>Dorsal thalamus across 76 mammals: somatosensory thalamus and somatosensory cortex volumes</i></p></div>
+                                    </div>
+                                    <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>11:55&ndash;12:20</b></p></div>
+                                        <div class="programTableItems2"><p><b>Pavel Nemec &amp; Kristina Kverkova</b> &mdash; <i>Evolution of neuron numbers in vertebrates and effect of domestication on cellular brain composition</i></p></div>
+                                    </div>
+                                    <!-- <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>12:20&ndash;12:40</b></p></div>
+                                        <div class="programTableItems2"><p><b>Alexandra de Sousa</b> &mdash; <i>Do expensive brain regions increase less in humans?</i></p></div>
+                                    </div> -->
+                                    <!-- <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>12:20&ndash;12:40</b></p></div>
+                                        <div class="programTableItems2"><p><b>Ornella Bertrand</b> &mdash; <i>The impact of gliding on the evolution of squirrel brains: a description of endocasts</i></p></div>
+                                    </div> -->
+                                    <!-- Poster Flash Talks -->
+                                    <div class="programSessions">
+                                        <p><b>Poster Flash Talks</b></p>
+                                    </div>
+                                    <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>12:20&ndash;12:55</b></p></div>
+                                        <div class="programTableItems2"><p><b>All poster presenters</b> &mdash; <i>2-minute flash presentations (16 posters)</i></p></div>
+                                    </div>
+
+                                    <!-- Lunch -->
+                                    <div class="programTableContentUneven">
+                                        <div class="programTableItems1"><p>Lunch break</p></div>
+                                        <div class="programTableItems2"><p><i>13:00&ndash;14:00</i></p></div>
+                                    </div>
+
+                                    <!-- Poster Flash Talks -->
+                                    <!-- <div class="programSessions">
+                                        <p><b>Poster Flash Talks</b></p>
+                                    </div>
+                                    <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>14:15&ndash;14:50</b></p></div>
+                                        <div class="programTableItems2"><p><b>All poster presenters</b> &mdash; <i>2-minute flash presentations (16 posters)</i></p></div>
+                                    </div> -->
+
+                                    <!-- Poster Session I -->
+                                    <div class="programSessions">
+                                        <p><b>Poster Session I</b></p>
+                                    </div>
+                                    <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>14:00&ndash;14:35</b></p></div>
+                                        <div class="programTableItems2"><p><i>Open poster viewing</i></p></div>
+                                    </div>
+
+                                    <!-- Session: Principles of Brain Organisation -->
+                                    <div class="programSessions">
+                                        <p><b>Principles of Brain Organisation</b></p>
+                                    </div>
+                                    <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>14:45&ndash;15:05</b></p></div>
+                                        <div class="programTableItems2"><p><b>Ornella Bertrand</b> &mdash; <i>The impact of gliding on the evolution of squirrel brains: a perspective from endocasts</i></p></div>
+                                    </div>
+                                    <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>15:05&ndash;15:25</b></p></div>
+                                        <div class="programTableItems2"><p><b>Katja Heuer</b> &mdash; <i>An evolutionary perspective on the emergence of brain anatomy and cognition</i></p></div>
+                                    </div>
+                                    <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>15:25&ndash;15:45</b></p></div>
+                                        <div class="programTableItems2"><p><b>Rogier Mars</b> (online) &mdash; <i>Cross-species brain mapping</i></p></div>
+                                    </div>
+                                    <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>15:45&ndash;16:05</b></p></div>
+                                        <div class="programTableItems2"><p><b>Camille Giacometti</b> &mdash; <i>Pareto task inference reveals neurochemical trade-offs in the macaque brain</i></p></div>
+                                    </div>
+                                    <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>16:05&ndash;16:25</b></p></div>
+                                        <div class="programTableItems2"><p><b>Henry Evrard</b> &mdash; <i>Comparative organisation of the interoceptive pathways and insular cortex</i></p></div>
+                                    </div>
+
+                                    <!-- Coffee break -->
+                                    <div class="programTableContentUneven">
+                                        <div class="programTableItems1"><p>Coffee break</p></div>
+                                        <div class="programTableItems2"><p><i>16:25&ndash;16:50</i></p></div>
+                                    </div>
+
+                                    <!-- Session: Language Architecture & the Arcuate Fascicle -->
+                                    <div class="programSessions">
+                                        <p><b>Language Architecture &amp; the Arcuate Fascicle</b></p>
+                                    </div>
+                                    <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>16:50&ndash;17:25</b></p></div>
+                                        <div class="programTableItems2"><p><b>Angela Friederici</b> &mdash; <i>Neural architecture of language</i></p></div>
+                                    </div>
+                                    <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>17:25&ndash;17:50</b></p></div>
+                                        <div class="programTableItems2"><p><b>Alfred Anwander &amp; Yannick Becker</b> &mdash; <i>Evolutionary connectivity: ultra-high resolution dMRI and the arcuate fascicle across great apes</i></p></div>
+                                    </div>
+                                    <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>17:50&ndash;18:10</b></p></div>
+                                        <div class="programTableItems2"><p><b>S&eacute;bastien Bouret</b> &mdash; <i>Using comparative anatomy to bridge the gap between cognition and behavioral ecology in primates</i></p></div>
+                                    </div>
+
+                                    <!-- End of Day 1 -->
+                                    <div class="programTableContentUneven">
+                                        <div class="programTableItems1"><p><b>End of Day 1</b></p></div>
+                                        <div class="programTableItems2"><p><i>18:10</i></p></div>
+                                    </div>
+                                    <div class="programSessions">
+                                        <p><b>Dinner</b></p>
+                                    </div>
+
+                                </div> <!--programDay1-->
+                            </div>
+
+                            <div><p style="line-height: 6rem;"><br /></p></div>
+
+                            <!-- ===================== DAY 2 ===================== -->
+                            <div id="programTableDays">
+                                <div class="programDay" id="programDay2">
+
+                                    <div class="programDayHeader">
+                                        <p><b>Day 2 &mdash; Tuesday 28 April</b></p>
+                                    </div>
+
+                                    <!-- Session: Language Evolution & Communication -->
+                                    <div class="programSessions">
+                                        <p><b>Language Evolution &amp; Communication</b></p>
+                                    </div>
+                                    <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>9:00&ndash;9:35</b></p></div>
+                                        <div class="programTableItems2"><p><b>C&eacute;dric Boeckx</b> &mdash; <i>Evolution of the language-ready brain</i></p></div>
+                                    </div>
+                                    <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>9:35&ndash;9:55</b></p></div>
+                                        <div class="programTableItems2"><p><b>Catherine Crockford</b> &mdash; <i>Assessing primate vocal behaviour for brain studies</i></p></div>
+                                    </div>
+                                    <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>9:55&ndash;10:15</b></p></div>
+                                        <div class="programTableItems2"><p><b>Adrien Meguerditchian</b> &mdash; <i>Longitudinal development of handedness and its brain specialisation in baboons</i></p></div>
+                                    </div>
+                                    <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>10:15&ndash;10:35</b></p></div>
+                                        <div class="programTableItems2"><p><b>Andrea Ravignani</b> &mdash; <i>Evolving brains: towards integrative knowledge from cognitive neuroscience and ethological fieldwork</i></p></div>
+                                    </div>
+
+                                    <!-- Coffee break -->
+                                    <div class="programTableContentUneven">
+                                        <div class="programTableItems1"><p>Coffee break</p></div>
+                                        <div class="programTableItems2"><p><i>10:35&ndash;11:00</i></p></div>
+                                    </div>
+
+                                    <!-- Session: The Social Brain -->
+                                    <div class="programSessions">
+                                        <p><b>The Social Brain</b></p>
+                                    </div>
+                                    <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>11:00&ndash;11:20</b></p></div>
+                                        <div class="programTableItems2"><p><b>Julia Sliwa</b> &mdash; <i>Social cognition in primates</i></p></div>
+                                    </div>
+                                    <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>11:20&ndash;11:40</b></p></div>
+                                        <div class="programTableItems2"><p><b>S&eacute;bastien Ballesta</b> &mdash; <i>Toward neuroanatomical and cognitive foundations of social tolerance across macaque species</i></p></div>
+                                    </div>
+                                    <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>11:40&ndash;12:00</b></p></div>
+                                        <div class="programTableItems2"><p><b>Marius Braunsdorf</b> &mdash; <i>Social structure shapes macroscale white matter organisation in macaques</i></p></div>
+                                    </div>
+                                    <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>12:00&ndash;12:20</b></p></div>
+                                        <div class="programTableItems2"><p><b>Rui Oliveira</b> &mdash; <i>Artificial selection for sociality drives the evolution of neuronal numbers and brain activity in zebrafish</i></p></div>
+                                    </div>
+                                    <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>12:20&ndash;12:40</b></p></div>
+                                        <div class="programTableItems2"><p><b>Magda Teles</b> &mdash; <i>Early social environment regulates brain structure and function in zebrafish</i></p></div>
+                                    </div>
+
+                                    <!-- Discussion -->
+                                    <div class="programSessionInfo">
+                                        <p><b>Discussion: Social Brain &amp; Communication</b> &mdash; <i>12:40&ndash;13:15</i></p>
+                                    </div>
+
+                                    <!-- Lunch -->
+                                    <div class="programTableContentUneven">
+                                        <div class="programTableItems1"><p>Lunch break</p></div>
+                                        <div class="programTableItems2"><p><i>13:15&ndash;14:15</i></p></div>
+                                    </div>
+
+                                    <!-- Poster Session II -->
+                                    <div class="programSessions">
+                                        <p><b>Poster Session II</b></p>
+                                    </div>
+                                    <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>14:15&ndash;14:45</b></p></div>
+                                        <div class="programTableItems2"><p><i>Open poster viewing</i></p></div>
+                                    </div>
+
+                                    <!-- Session: Neural Dynamics & Circuits -->
+                                    <div class="programSessions">
+                                        <p><b>Neural Dynamics &amp; Circuits</b></p>
+                                    </div>
+                                    <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>14:50&ndash;15:25</b></p></div>
+                                        <div class="programTableItems2"><p><b>Marieke Sch&ouml;lvinck &amp; Martha Havenith</b> &mdash; <i>Inferring internal states across mice, monkeys and humans</i></p></div>
+                                    </div>
+                                    <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>15:25&ndash;15:45</b></p></div>
+                                        <div class="programTableItems2"><p><b>Stefan Everling</b> &mdash; <i>Chemogenetic modulation of the marmoset pregenual anterior cingulate cortex</i></p></div>
+                                    </div>
+
+                                    <!-- Session: Connectivity & White Matter -->
+                                    <div class="programSessions">
+                                        <p><b>Connectivity &amp; White Matter</b></p>
+                                    </div>
+                                    <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>15:50&ndash;16:10</b></p></div>
+                                        <div class="programTableItems2"><p><b>Shaun Warrington</b> &mdash; <i>High-resolution diffusion MRI tractography in the NHP brain using a human 10.5T scanner</i></p></div>
+                                    </div>
+                                    <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>16:10&ndash;16:30</b></p></div>
+                                        <div class="programTableItems2"><p><b>Ma&euml;lig Chauvel</b> &mdash; <i>Sulcus-based topology of short-range white matter in humans and chimpanzees</i></p></div>
+                                    </div>
+
+                                    <!-- Coffee break -->
+                                    <div class="programTableContentUneven">
+                                        <div class="programTableItems1"><p>Coffee break</p></div>
+                                        <div class="programTableItems2"><p><i>16:30&ndash;16:55</i></p></div>
+                                    </div>
+
+                                    <!-- Session: Comparative Brain Structure -->
+                                    <div class="programSessions">
+                                        <p><b>Comparative Brain Structure</b></p>
+                                    </div>
+                                    <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>16:55&ndash;17:15</b></p></div>
+                                        <div class="programTableItems2"><p><b>Michel Mickael</b> &mdash; <i>The brain barriers: evolution and role of immune cell migration regulation</i></p></div>
+                                    </div>
+                                    <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>17:15&ndash;17:35</b></p></div>
+                                        <div class="programTableItems2"><p><b>William Hopkins</b> &mdash; <i>Brain aging in chimpanzees, rhesus monkeys and baboons</i></p></div>
+                                    </div>
+                                    <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>17:35&ndash;17:55</b></p></div>
+                                        <div class="programTableItems2"><p><b>Alexandra de Sousa</b> &mdash; <i>Do expensive brain regions increase less in humans?</i></p></div>
+                                    </div>
+                                    
+
+                                    <!-- Discussion -->
+                                    <div class="programSessionInfo">
+                                        <p><b>Discussion: Cross-Cutting Themes</b> &mdash; <i>17:55&ndash;18:25</i></p>
+                                    </div>
+
+                                    <!-- End of Day 2 -->
+                                    <div class="programTableContentUneven">
+                                        <div class="programTableItems1"><p><b>End of Day 2</b></p></div>
+                                        <div class="programTableItems2"><p><i>18:25</i></p></div>
+                                    </div>
+                                    <div class="programSessions">
+                                        <p><b>Dinner</b></p>
+                                    </div>
+
+                                </div> <!--programDay2-->
+                            </div>
+
+                            <div><p style="line-height: 6rem;"><br /></p></div>
+
+                            <!-- ===================== DAY 3 ===================== -->
+                            <div id="programTableDays">
+                                <div class="programDay" id="programDay3">
+
+                                    <div class="programDayHeader">
+                                        <p><b>Day 3 &mdash; Wednesday 29 April</b></p>
+                                    </div>
+
+                                    <!-- Session: Development & Evo-Devo -->
+                                    <div class="programSessions">
+                                        <p><b>Development &amp; Evo-Devo</b></p>
+                                    </div>
+                                    <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>9:00&ndash;9:35</b></p></div>
+                                        <div class="programTableItems2"><p><b>Denis Jabaudon</b> &mdash; <i>Cortical neuron diversification</i></p></div>
+                                    </div>
+                                    <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>9:35&ndash;9:55</b></p></div>
+                                        <div class="programTableItems2"><p><b>Alex Donovan</b> &mdash; <i>How the human neuroepithelium transitions to neurogenesis</i></p></div>
+                                    </div>
+                                    <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>9:55&ndash;10:15</b></p></div>
+                                        <div class="programTableItems2"><p><b>Idoia Quintana Urzainqui</b> &mdash; <i>The shark embryo as a model to study the origin and evolution of the vertebrate brain</i></p></div>
+                                    </div>
+                                    <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>10:15&ndash;10:35</b></p></div>
+                                        <div class="programTableItems2"><p><b>Roberto Toro</b> &mdash; <i>Mechanical morphogenesis of brain folding</i></p></div>
+                                    </div>
+
+                                    <!-- Coffee break -->
+                                    <div class="programTableContentUneven">
+                                        <div class="programTableItems1"><p>Coffee break</p></div>
+                                        <div class="programTableItems2"><p><i>10:35&ndash;11:00</i></p></div>
+                                    </div>
+
+                                    <!-- Cetacean Brains -->
+                                    <div class="programSessions">
+                                        <p><b>Cetacean Brains</b></p>
+                                    </div>
+                                    <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>11:00&ndash;11:20</b></p></div>
+                                        <div class="programTableItems2"><p><b>Kamilla Souza</b> (online) &mdash; <i>Cetacean brains in Brazil</i></p></div>
+                                    </div>
+
+                                    <!-- Session: Broader Brains -->
+                                    <div class="programSessions">
+                                        <p><b>Broader Brains for Broader Research</b></p>
+                                    </div>
+                                    <div class="programSessionInfo">
+                                        <p><i>A joint session with Tommaso Gerussi, Jean-Marie Gra&iuml;c, Nina Patzke, Mehdi Behroozi &amp; Anastasia Tsingotjidou. Each presenter covers a different aspect (~12 min each + group discussion).</i></p>
+                                    </div>
+                                    <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>11:20&ndash;12:30</b></p></div>
+                                        <div class="programTableItems2"><p><b>Tsingotjidou, Gerussi, Behroozi, Gra&iuml;c, Patzke</b> &mdash; <i>The use of large brains in neuroscience</i></p></div>
+                                    </div>
+
+                                    <!-- Session: Carnivoran Brains I -->
+                                    <div class="programSessions">
+                                        <p><b>Carnivoran Brains I</b></p>
+                                    </div>
+                                    <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>12:30&ndash;12:50</b></p></div>
+                                        <div class="programTableItems2"><p><b>Laszlo Garamszegi</b> &mdash; <i>The evolution of brain size and shape in dogs (including ancient dogs)</i></p></div>
+                                    </div>
+
+                                    <!-- Lunch -->
+                                    <div class="programTableContentUneven">
+                                        <div class="programTableItems1"><p>Lunch break</p></div>
+                                        <div class="programTableItems2"><p><i>12:50&ndash;13:50</i></p></div>
+                                    </div>
+
+                                    <!-- Poster Session III -->
+                                    <div class="programSessions">
+                                        <p><b>Poster Session III</b></p>
+                                    </div>
+                                    <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>13:50&ndash;14:20</b></p></div>
+                                        <div class="programTableItems2"><p><i>Open poster viewing</i></p></div>
+                                    </div>
+
+                                    <!-- Session: Carnivoran Brains & Brain Aging -->
+                                    <div class="programSessions">
+                                        <p><b>Carnivoran Brains &amp; Brain Aging</b></p>
+                                    </div>
+                                    <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>14:20&ndash;14:40</b></p></div>
+                                        <div class="programTableItems2"><p><b>Erin Hecht</b> &mdash; <i>Brain-behaviour evolution in domestic dogs</i></p></div>
+                                    </div>
+                                    <!-- <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>14:10&ndash;14:30</b></p></div>
+                                        <div class="programTableItems2"><p><b>Laszlo Garamszegi</b> &mdash; <i>The evolution of brain size and shape in dogs (including ancient dogs)</i></p></div>
+                                    </div> -->
+                                    <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>14:40&ndash;15:00</b></p></div>
+                                        <div class="programTableItems2"><p><b>Magdalena Boch</b> &mdash; <i>Dog social brain</i></p></div>
+                                    </div>
+                                    <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>15:00&ndash;15:20</b></p></div>
+                                        <div class="programTableItems2"><p><b>Christine Charvet</b> (online) &mdash; <i>Cat brains age like humans: translating time shows pet cats as natural models for human aging</i></p></div>
+                                    </div>
+                                    <!-- Coffee break -->
+                                    <div class="programTableContentUneven">
+                                        <div class="programTableItems1"><p>Coffee break</p></div>
+                                        <div class="programTableItems2"><p><i>15:20&ndash;15:45</i></p></div>
+                                    </div>
+
+                                    <!-- Session: Methods & Tools -->
+                                    <div class="programSessions">
+                                        <p><b>Methods &amp; Tools</b></p>
+                                    </div>
+                                    <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>15:45&ndash;16:05</b></p></div>
+                                        <div class="programTableItems2"><p><b>Cl&eacute;ment Garin</b> &mdash; <i>EvoDevo NeuroImaging Explorer (EDNiX): brain evolution and development across species</i></p></div>
+                                    </div>
+                                    <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>16:05&ndash;16:25</b></p></div>
+                                        <div class="programTableItems2"><p><b>Antoine Bourlier</b> &mdash; <i>3DBrainMiner: an open-source platform for modelling and visualising the brain as graphs</i></p></div>
+                                    </div>
+                                    <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>16:25&ndash;16:45</b></p></div>
+                                        <div class="programTableItems2"><p><b>Elodie Chaillou</b> &mdash; <i>Customised Brain Box (CuBBox): standardised serial brain sectioning</i></p></div>
+                                    </div>
+
+                                    <!-- Coffee break -->
+                                    <div class="programTableContentUneven">
+                                        <div class="programTableItems1"><p>Coffee break</p></div>
+                                        <div class="programTableItems2"><p><i>16:45&ndash;17:05</i></p></div>
+                                    </div>
+
+                                    <!-- Community Session -->
+                                    <div class="programSessions">
+                                        <p><b>Community Session: Looking Forward</b></p>
+                                    </div>
+                                    <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>17:05&ndash;18:30</b></p></div>
+                                        <div class="programTableItems2"><p><b>Open discussion</b> &mdash; <i>State of the Field &amp; Open Questions &bull; Perspective Piece Planning &bull; Special Issue &amp; Collaborative Projects</i></p></div>
+                                    </div>
+
+                                    <!-- End of Day 3 -->
+                                    <div class="programTableContentUneven">
+                                        <div class="programTableItems1"><p><b>End of Day 3</b></p></div>
+                                        <div class="programTableItems2"><p><i>18:30</i></p></div>
+                                    </div>
+                                    <div class="programSessions">
+                                        <p><b>Dinner</b></p>
+                                    </div>
+
+                                </div> <!--programDay3-->
+                            </div>
+
+                            <div><p style="line-height: 6rem;"><br /></p></div>
+
+                            <!-- ===================== DAY 4 ===================== -->
+                            <div id="programTableDays">
+                                <div class="programDay" id="programDay4">
+                                    <div class="programDayHeader">
+                                        <p><b>Day 4 &mdash; Thursday 30 April: Comparative Hackathon</b></p>
+                                    </div>
+                                    <!-- <div class="programSessionInfo">
+                                        <p>Open day for discussions and collaborative work. No formal programme &mdash; participants are invited to pursue questions and projects that emerged during the meeting.</p>
+                                    </div> -->
+                                    <div class="programSessions">
+                                        <p><b>Hackathon day</b>  <i>Start at 10 AM</i></p>
+                                    </div>
+                                    <div class="programSessions">
+                                        <p>This day has no fixed schedule but is for people to connect around their topics of interest, discuss, and start collaborations. It can have a set of unconference sessions where people can spontaneously present topics that are of interest to a larger group.</p>
+                                    </div>
+                                    <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>Discussions</b></p></div>
+                                        <div class="programTableItems2"><p><i>around croissant & coffee and a gigantic white board</i></p></div>
+                                    </div>
+                                    <div class="programTableContentEvenContrib">
+                                        <div class="programTableItems1"><p><b>Unconference sessions</b></p></div>
+                                        <div class="programTableItems2"><p><i>Spontaneous presentations on the big screen or the projector that emerge from the ongoing discussions</i></p></div>
+                                    </div>
+                                    <div class="programTableContentUnevenContrib">
+                                        <div class="programTableItems1"><p><b>Collaborative projects</b></p></div>
+                                        <div class="programTableItems2"><p><i>Finding collaborators and start working on projects</i></p></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div> <!--programTableContainer-->
+                    </div> <!--row-->
+                </div> <!--container-->
+            </div> <!--program-->
+
+
+            <!-- Posters -->
+            <div class="row" id="posterlist">
+                <div class="container" style="background: rgba(0,0,0,0.5);">
+                    <h4>Posters at the Comparative Brain Meeting</h4>
+                    <div class="row">
+                        <div id="programTableContainer">
+
+                            <div class="posterUneven">
+                                <div class="programTableItems1"><p><b>P1</b></p></div>
+                                <div class="programTableItems2"><p><b>Camille Pluchot</b> &mdash; <i>Sensory cortical mapping in voluntary awake and unrestrained sheep</i></p></div>
+                            </div>
+                            <div class="posterEven">
+                                <div class="programTableItems1"><p><b>P2</b></p></div>
+                                <div class="programTableItems2"><p><b>Cl&eacute;ment Caporal</b> &mdash; <i>Cortex folding effect on pyramidal neuron shape</i></p></div>
+                            </div>
+                            <div class="posterUneven">
+                                <div class="programTableItems1"><p><b>P3</b></p></div>
+                                <div class="programTableItems2"><p><b>Cosma Rost</b> &mdash; <i>Comparing the social brain connectome in humans and macaques</i></p></div>
+                            </div>
+                            <div class="posterEven">
+                                <div class="programTableItems1"><p><b>P4</b></p></div>
+                                <div class="programTableItems2"><p><b>Daniel Lozano</b> &mdash; <i>MRI-based brain atlases of representative species of vertebrates</i></p></div>
+                            </div>
+                            <div class="posterUneven">
+                                <div class="programTableItems1"><p><b>P5</b></p></div>
+                                <div class="programTableItems2"><p><b>David Meunier</b> &mdash; <i>func_BaboFet: advanced methods for processing fetal PNH functional MRI</i></p></div>
+                            </div>
+                            <div class="posterEven">
+                                <div class="programTableItems1"><p><b>P6</b></p></div>
+                                <div class="programTableItems2"><p><b>Fatma &Ouml;zge Ozkok</b> &mdash; <i>AI-assisted tools for comparative brain data integration</i></p></div>
+                            </div>
+                            <div class="posterUneven">
+                                <div class="programTableItems1"><p><b>P7</b></p></div>
+                                <div class="programTableItems2"><p><b>Ilaria Morassut</b> &mdash; <i>Experience-dependent maturation of cortical cell types</i></p></div>
+                            </div>
+                            <div class="posterEven">
+                                <div class="programTableItems1"><p><b>P8</b></p></div>
+                                <div class="programTableItems2"><p><b>J&eacute;r&ocirc;me Sallet</b> &mdash; <i>Sulcal patterns of the temporo-parietal cortex in primates</i></p></div>
+                            </div>
+                            <div class="posterUneven">
+                                <div class="programTableItems1"><p><b>P9</b></p></div>
+                                <div class="programTableItems2"><p><b>Katherine Bryant</b> &mdash; <i>Comparative carnivoran white matter</i></p></div>
+                            </div>
+                            <div class="posterEven">
+                                <div class="programTableItems1"><p><b>P10</b></p></div>
+                                <div class="programTableItems2"><p><b>Kevin Martinez-Anhom</b> &mdash; <i>A unified computational model of cortical folding for the cerebrum and the cerebellum</i></p></div>
+                            </div>
+                            <div class="posterUneven">
+                                <div class="programTableItems1"><p><b>P11</b></p></div>
+                                <div class="programTableItems2"><p><b>Mustafa Ozan Ozkok</b> &mdash; <i>Deep learning-based feature extraction for comparative brain MRI analysis</i></p></div>
+                            </div>
+                            <div class="posterEven">
+                                <div class="programTableItems1"><p><b>P12</b></p></div>
+                                <div class="programTableItems2"><p><b>Nicola Palomero-Gallagher</b> &mdash; <i>MEBRAINS: a multilevel macaque brain atlas</i></p></div>
+                            </div>
+                            <div class="posterUneven">
+                                <div class="programTableItems1"><p><b>P13</b></p></div>
+                                <div class="programTableItems2"><p><b>Sara Binder</b> &mdash; <i>Modelling activation in the canine brain: establishing dog BOLD signal properties</i></p></div>
+                            </div>
+                            <div class="posterEven">
+                                <div class="programTableItems1"><p><b>P14</b></p></div>
+                                <div class="programTableItems2"><p><b>Yannick Becker &amp; Alfred Anwander</b> &mdash; <i>Morphology of the auditory cortex across apes and development</i></p></div>
+                            </div>
+                            <div class="posterUneven">
+                                <div class="programTableItems1"><p><b>P15</b></p></div>
+                                <div class="programTableItems2"><p><b>Yasemin Salgirli Demirbas</b> &mdash; <i>Approach or Avoid? Can behavioral laterality be a window into feline social behavior</i></p></div>
+                            </div>
+                            <div class="posterEven">
+                                <div class="programTableItems1"><p><b>P16</b></p></div>
+                                <div class="programTableItems2"><p><b>Yufan Wang</b> &mdash; <i>TBD</i></p></div>
+                            </div>
+
+                        </div> <!--programTableContainer-->
+                    </div> <!--row-->
+                </div> <!--container-->
+            </div> <!--posterlist-->
+
+
+            <!-- Venue / Location -->
+            <!-- <div class="row" id="bestexperience">
+                <div class="container" style="background: rgba(0,0,0,0.3);">
+                    <h4>Venue</h4>
+                    <div class="row">
+                        <div id="programTableContainer">
+                            <div class="programTableDescription" style="margin-bottom:2rem;">
+                                <p>
+                                    <b>Institut Pasteur</b><br />
+                                    28 rue du Dr Roux, 75015 Paris, France
+                                </p>
+                                <p>
+                                    The meeting takes place at Institut Pasteur in the 15th arrondissement of Paris. The institute is easily accessible by public transport. The nearest metro station is Pasteur (lines 6 and 12), which is just a few minutes' walk from the institute.
+                                </p>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.767939768109!2d2.3071271287829234!3d48.841123787220084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e670376abf4b5b%3A0xe831277d10f68655!2sPasteur%20Institute!5e0!3m2!1sen!2sfr!4v1693070614740!5m2!1sen!2sfr" width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <p>
+                                    <b>Hybrid participation</b><br />
+                                    The meeting is planned primarily as an in-person event, but online participation will also be possible. All sessions will be accessible to remote participants. Details about the virtual room will be shared with registered participants before the meeting.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  -->
+            <!--bestexperience-->
+
+
+            <!-- Organisers -->
+            <!-- <div class="row" id="organizers">
+                <div class="container" style="background: rgba(0,0,0,0.2);">
+                    <h4>Organisers</h4>
+                    <div class="row">
+                        <div id="programTableContainer">
+                            <div class="programTableDescription" style="padding-bottom:2rem;">
+                                <div id="organizerColumns">
+                                    <div id="organizerColumnLeft">
+                                        <div class="organizerCard">
+                                            <p>
+                                                <a href="https://katjaq.github.io" target="_blank">Katja Heuer</a><br />
+                                                <span style="font-weight:300;">Postdoc in the Neurophysiology of Social Cognition Lab, ICM</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div id="organizerColumnCenter">
+                                        <div class="organizerCard">
+                                            <p>
+                                                <a href="https://research.pasteur.fr/en/member/roberto-toro" target="_blank">Roberto Toro</a><br />
+                                                <span style="font-weight:300;">Applied and Theoretical Neuroanatomy lab, Institut Pasteur</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div id="organizerColumnRight">
+                                        <div class="organizerCard">
+                                            <p>
+                                                <a href="https://www.sliwalab.org" target="_blank">Julia Sliwa</a><br />
+                                                <span style="font-weight:300;">Neurophysiology of Social Cognition Lab, Paris Brain Institute</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- Sponsors -->
+                    <!-- <h4>We kindly thank the sponsors of our event</h4>
+                    <div class="row">
+                        <div id="programTableContainer">
+                            <div class="programTableDescription" style="padding-bottom:2rem;">
+                                <div id="logoColumns">
+                                    <div class="logoCard">
+                                        <a style="font-weight: 300;" href="http://neuroanatomy.github.io"><img style="width:40%; max-width:50%;transform:translate(0%,0px);margin:5px;" src="./images/logo/naat-bw.png" /></a>
+                                    </div>
+                                    <div class="logoCard">
+                                        <a style="font-weight: 300;" href="https://www.pasteur.fr/en"><img style="width:70%; max-width:70%;transform:translate(0%,0px);margin:5px;" src="./images/logo/institut_pasteur_logo_b.png" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>  -->
+                <!--container-->
+            <!-- </div>  -->
+            <!--organizers-->
+
+
+
+            <!-- part 2.5 best experience -->
+            <div class="row" id="bestexperience">
+                <div class="container" style="background: rgba(0,0,0,0.3);">
+                    <h4>How to join the meeting</h4>
+                    <div class="row">
+
+                        <div id="programTableContainer">
+                            <div class="programTableDescription" style="padding-bottom:2rem;">
+
+                                <p>
+                                    <b>The onsite meeting room  </b>&nbsp;<span style="font-size:40px;">🏢</span><br />
+                                    We'll be in Amphitheatre Duclaux. Please present yourself at the Institut Pasteur reception, 28 rue du Dr Roux.
+                                    Your participation has been registered in the system and you will receive your badge upon presentation of an
+                                    ID card with name and photo to the reception team. Our local team will pick up small groups of participants on
+                                    a rolling basis until 9 am. Your badge will be valid for the entire duration of the meeting and you will need
+                                    it everytime you enter or exit the campus.<br />
+                                    <div class="content">
+                						<p>To get to Institut Pasteur using public transportation, you can take the metro line 6 and get off at
+                                            the Pasteur station, which is just a few minutes' walk from the institute.</p>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.767939768109!2d2.3071271287829234!3d48.841123787220084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e670376abf4b5b%3A0xe831277d10f68655!2sPasteur%20Institute!5e0!3m2!1sen!2sfr!4v1693070614740!5m2!1sen!2sfr" width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            						</div>
+                                </p>
+                                <p>
+                                    <b>The online video room  </b>&nbsp;<span style="font-size:40px;">🎥</span><br />
+                                    We will be using Microsoft Teams. It will be monitored throughout the talk sessions so that online participants can post questions in the chat or raise their hand and join the discussion on camera. Our setup combines several devices to maintain good audio quality during the Q&A and discussion sessions. Everybody who would like to share their screen, please install the Microsoft teams app – joining just on the Web iterface has caused problems in the past.<br />
+                                </p>
+
+                            </div>
+
+                        </div> <!--programTableContainer-->
+
+                    </div> <!--row of best experience section-->
+
+                </div> <!--container of best experience section-->
+
+            </div> <!--best experience div-->
+
+
+
+            <!-- part 5 Organisers -->
+            <div class="row" id="organizers">
+                <div class="container" style="background: rgba(0,0,0,0.2);">
+                    <h4>Team of organizers</h4>
+                    <div class="row">
+
+                        <div id="programTableContainer">
+                            <div class="programTableDescription" style="padding-bottom:2rem;">
+                                <div id="organizerColumns">
+                                    <!-- <div id="organizerColumnLeft"> -->
+                                        <div class="organizerCard">
+                                            <p>
+                                                <a href="https://katjaq.github.io" target="_blank">Katja Heuer</a> (postdoc in the Neurophysiology of Social Cognition Lab, Paris Brain Institute)<br/>
+                                                <a style="font-weight: 300;" href="https://bsky.app/profile/k4tj4.bsky.social" target="_blank"><img style="width:1.8rem;transform:translate(0,0px);margin-right:5px;" src="./images/landing/bluesky-white-icon.png" />@k4tj4</a>
+                                            </p>
+                                        </div>
+                                        <!-- <div class="organizerCard">
+                                            <p>
+                                                <a href="https://www.ndcn.ox.ac.uk/team/rogier-mars" target="_blank">Rogier Mars</a> (Neuroecology lab, Donders Institute for Brain, Cognition and Behaviour, Nijmegen; Centre for Functional MRI of the Brain, Oxford) <br/>
+                                                <a style="font-weight: 300;" href="https://twitter.com/NeuroecologyLab" target="_blank"><img style="width:1.8rem;transform:translate(0,0px);margin-right:5px;" src="./images/landing/twitter_white.png" />@NeuroecologyLab</a>
+                                            </p>
+                                        </div> -->
+                                    <!-- </div> -->
+                                    <!--organizerColumn right-->
+                                    <!-- <div id="organizerColumnRight"> -->
+                                        <div class="organizerCard">
+                                            <p>
+                                                <a href="https://research.pasteur.fr/en/member/roberto-toro" target="_blank">Roberto Toro</a> (Applied and Theoretical Neuroanatomy lab, Institut Pasteur Paris) <br/>
+                                                <a style="font-weight: 300;" href="https://bsky.app/profile/r3rt0.bsky.social" target="_blank"><img style="width:1.8rem;transform:translate(0,0px);margin-right:5px;" src="./images/landing/bluesky-white-icon.png" />@r3rt0</a>
+                                            </p>
+                                        </div>
+                                        <div class="organizerCard">
+                                            <p>
+                                                <a href="https://www.sliwalab.org/" target="_blank">Julia Sliwa</a> (Neurophysiology of Social Cognition Lab, Paris Brain Institute)<br/>
+                                                <a style="font-weight: 300;" href="https://bsky.app/profile/juliasliwa.bsky.social" target="_blank"><img style="width:1.8rem;transform:translate(0,0px);margin-right:5px;" src="./images/landing/bluesky-white-icon.png" />@juliasliwa</a>
+                                            </p>
+                                        </div>
+                                    <!-- </div> -->
+                                    <!--organizerColumn right-->
+                                </div> 
+                                <!--organizerColumns-->
+                            </div> <!--programTableDescription-->
+
+                        </div> <!--programTableContainer-->
+
+                    </div> <!--row of organizer section-->
+
+
+                    <!-- Sponsors -->
+                    <h4>We kindly thank the sponsors of our event</h4>
+                    <div class="row">
+
+                        <div id="programTableContainer">
+                            <div class="programTableDescription" style="padding-bottom:2rem;">
+                                <div id="logoColumns">
+                                    <!-- <div id="organizerColumnLeft"> -->
+                                    <!-- <div id="logoCardContainer"> -->
+                                        <div class="logoCard">
+                                            <a style="font-weight: 300;" href="http://neuroanatomy.github.io"><img style="width:40%; max-width:50%;transform:translate(0%,0px);margin:5px;" src="./images/logo/naat-bw.png" /></a>
+                                        </div>
+                                        <div class="logoCard">
+                                            <a style="font-weight: 300;" href="https://tibbe-network.github.io"><img style="width:70%; max-width:70%;transform:translate(0%,0px);margin:5px;" src="./images/logo/ESEB_logo_uLBB.png" /></a>
+                                        </div>
+                                        <div class="logoCard">
+                                            <a style="font-weight: 300;" href="https://www.pasteur.fr/en"><img style="width:70%; max-width:70%;transform:translate(0%,0px);margin:5px;" src="./images/logo/institut_pasteur_logo_b.png" /></a>
+                                        </div>
+                                        <div class="logoCard">
+                                            <a style="font-weight: 300;" href="https://www.inception-program.fr"><img style="width:40%; max-width:40%;transform:translate(0%,0px);margin:5px;" src="./images/logo/inception_bw.png" /></a>
+                                        </div>
+                                    <!-- </div> -->
+                                </div> <!--sponsororganizerColumns-->
+                            </div> <!--programTableDescription-->
+
+                        </div> <!--programTableContainer-->
+
+                    </div> <!--row of sponsors section-->
+
+                </div> <!--container of organizer section-->
+
+            </div> <!--organizers div-->
+
+
+            <!-- footer -->
+            <div class="row" id="CoC" style="width:100%; position:relative; bottom:0px; margin:0;padding-top:1%;border:0; color:white; background:#111111;">
+                <p style="text-align: center; font-size: 1.4rem; width: 100%">Made with love &nbsp; ❤ &nbsp; Please respect the <a href="https://github.com/BrainTrees/ComparativeBrainMeeting/blob/main/CoC.md" target="_blank">Code of Conduct.</a></p>
+            </div>
+
+        </div> <!--q-app-->
+
+        <div id="dpi" style="height: 1in;left: -100%;position: absolute;top: -100%;width: 1in;"></div>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue@^2.0.0/dist/vue.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/quasar@1.9.10/dist/quasar.umd.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/quasar@1.9.10/dist/icon-set/svg-material-icons.umd.min.js"></script>
+
+        <script type="module">
+            Quasar.Dark.set(true);
+
+            const app = window.app = new Vue({
+                el: '#q-app',
+
+                methods: {
+                    goTo (url) {
+                        window.location = url
+                    }
+                }
+            });
+        </script>
+
+    </body>
+</html>
